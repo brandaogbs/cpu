@@ -1,0 +1,102 @@
+# Reading C:/altera_lite/16.0/modelsim_ase/tcl/vsim/pref.tcl
+# do microprocessor_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Copying C:/altera_lite/16.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/altera_lite/16.0/Projetos/Microprocessor/clock_div.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 11:50:14 on Nov 30,2016
+# vcom -reportprogress 300 -93 -work work C:/altera_lite/16.0/Projetos/Microprocessor/clock_div.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CLOCK_DIV
+# -- Compiling architecture BEHAVIOR of CLOCK_DIV
+# End time: 11:50:14 on Nov 30,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/altera_lite/16.0/Projetos/Microprocessor/output_files/MICRO_PACK.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 11:50:14 on Nov 30,2016
+# vcom -reportprogress 300 -93 -work work C:/altera_lite/16.0/Projetos/Microprocessor/output_files/MICRO_PACK.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling package MICRO_PACK
+# End time: 11:50:15 on Nov 30,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/altera_lite/16.0/Projetos/Microprocessor/microprocessor.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 11:50:15 on Nov 30,2016
+# vcom -reportprogress 300 -93 -work work C:/altera_lite/16.0/Projetos/Microprocessor/microprocessor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package MICRO_PACK
+# -- Compiling entity MICROPROCESSOR
+# -- Compiling architecture BEHAVIOR of MICROPROCESSOR
+# End time: 11:50:15 on Nov 30,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 11:50:15 on Nov 30,2016
+# vcom -reportprogress 300 -93 -work work C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package MICRO_PACK
+# -- Compiling entity CONTROLADOR_MICRO
+# -- Compiling architecture BEHAVIOR of CONTROLADOR_MICRO
+# End time: 11:50:15 on Nov 30,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 11:50:15 on Nov 30,2016
+# vcom -reportprogress 300 -93 -work work C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package MICRO_PACK
+# -- Compiling entity CONTROLADOR_PRIN
+# -- Compiling architecture BEHAVIOR of CONTROLADOR_PRIN
+# End time: 11:50:15 on Nov 30,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/altera_lite/16.0/Projetos/Microprocessor/display_segs.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 11:50:15 on Nov 30,2016
+# vcom -reportprogress 300 -93 -work work C:/altera_lite/16.0/Projetos/Microprocessor/display_segs.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package MICRO_PACK
+# -- Compiling entity DISPLAY_SEGS
+# -- Compiling architecture BEHAVIOR of DISPLAY_SEGS
+# End time: 11:50:15 on Nov 30,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 

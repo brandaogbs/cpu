@@ -1,0 +1,119 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+use ieee.numeric_std.all;
+
+USE WORK.MICRO_PACK.ALL;
+
+ENTITY CONTROLADOR_PRIN IS
+	PORT(CURRENT_FASE		: IN 	TYPE_FASE;
+		  TESTNEG,TESTZERO: IN 	STD_LOGIC;
+		  IR 					: IN  STD_LOGIC_VECTOR (15 DOWNTO 0);
+		  SC					: OUT STD_LOGIC_VECTOR (24 DOWNTO 1));
+END CONTROLADOR_PRIN;
+
+
+ARCHITECTURE BEHAVIOR OF CONTROLADOR_PRIN IS	 
+	
+	
+	BEGIN
+
+-- PROCESS FASE 4 E 5	
+	PROCESS (CURRENT_FASE)
+	
+	 VARIABLE BUS_INT1: std_logic_vector(9 downto 0);
+    VARIABLE BUS_INT2: std_logic_vector(9 downto 0);
+    VARIABLE BUS_INT3: std_logic_vector(9 downto 0);
+	
+	 VARIABLE MPC		: STD_LOGIC_VECTOR(9 DOWNTO 0);
+	
+	 VARIABLE MIR_IN 	: STD_LOGIC_VECTOR(24 DOWNTO 1):= MICRO_MEM(0);
+	
+	BEGIN
+		
+		CASE CURRENT_FASE IS
+		
+			WHEN F_RESET =>
+				
+				MIR_IN 	:= MICRO_MEM(0);
+				BUS_INT1	:= "0000000000";
+				BUS_INT2	:= "0000000000";
+				BUS_INT3	:= "0000000000";
+				
+			
+			WHEN F_4 =>
+			
+				CASE MIR_IN(22 DOWNTO 19) IS
+					
+					WHEN "0001" => --19
+						
+							BUS_INT1 := "0000000001";
+
+					WHEN "0010" => --20
+					  
+						  if (TESTZERO = '1') then
+								BUS_INT1 := "0000000001";				 
+						  else
+								BUS_INT1 := "0000000010";
+						  end if;
+					
+					WHEN "0100" => --21
+					
+						  if (TESTNEG = '1') then
+								BUS_INT1 := "0000000001";				 
+						  else
+								BUS_INT1 := "0000000010";
+						  end if;
+					  
+					WHEN "1000" => --22
+					
+						  BUS_INT1 := "000000" & IR(15 downto 12);
+					
+					
+					WHEN OTHERS =>
+					
+						  BUS_INT1 := "00" & x"00";
+			
+				END CASE;
+		
+			
+				CASE MIR_IN(24 DOWNTO 23) IS
+					
+					WHEN "01" => --23
+						
+							BUS_INT2 := MPC;
+
+
+					WHEN "10" => --24
+					  
+							BUS_INT2 := MIR_IN(15 downto 6);
+
+		
+					WHEN OTHERS =>
+					
+			
+				END CASE;
+			
+	
+			WHEN F_5 =>
+			
+				MPC := BUS_INT3;
+				
+				IF(MIR_IN(24) = '1') THEN
+		
+					sc <= MICRO_MEM(to_integer(unsigned(MPC)));
+				
+				END IF;
+			
+			WHEN OTHERS => 
+			
+		END CASE;
+		
+		BUS_INT3 := BUS_INT1 + BUS_INT2;
+
+		
+	
+	END PROCESS;
+	
+	
+END BEHAVIOR;

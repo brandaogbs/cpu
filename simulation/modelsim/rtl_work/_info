@@ -1,0 +1,272 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera_lite/16.0/Projetos/Microprocessor/simulation/modelsim
+Eclock_div
+Z1 w1480382810
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8C:/altera_lite/16.0/Projetos/Microprocessor/clock_div.vhd
+Z7 FC:/altera_lite/16.0/Projetos/Microprocessor/clock_div.vhd
+l0
+L5
+V`i2OL;0Lm1:5L[X1hL7_F0
+!s100 BHcnE7<AkdAOd4RCRN9G93
+Z8 OV;C;10.4d;61
+31
+Z9 !s110 1480513814
+!i10b 1
+Z10 !s108 1480513814.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/altera_lite/16.0/Projetos/Microprocessor/clock_div.vhd|
+Z12 !s107 C:/altera_lite/16.0/Projetos/Microprocessor/clock_div.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1
+Abehavior
+R2
+R3
+R4
+R5
+DEx4 work 9 clock_div 0 22 `i2OL;0Lm1:5L[X1hL7_F0
+l15
+L11
+VEQZaEfg<:CefXPDgXANII1
+!s100 gDk1`:1l_PVKRb4D`IkJF3
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Econtrolador_micro
+Z15 w1480513233
+R3
+Z16 DPx4 work 10 micro_pack 0 22 ZLHe0i4FDbgN8Fo0YLLH82
+R2
+Z17 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+Z18 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R4
+R5
+R0
+Z19 8C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd
+Z20 FC:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd
+l0
+L9
+VJ2EXT;lSaJ0B06Y]4:iL90
+!s100 V]HLFHnmc3gLSCcCE[ZHK2
+R8
+31
+Z21 !s110 1480513815
+!i10b 1
+Z22 !s108 1480513815.000000
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd|
+Z24 !s107 C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R3
+R16
+R2
+R17
+R18
+R4
+R5
+DEx4 work 17 controlador_micro 0 22 J2EXT;lSaJ0B06Y]4:iL90
+l20
+L17
+V<RiiT@Y[U[D;Ajk>?:OMB3
+!s100 f788FZXKf9I0[ZDeZ2G8J2
+R8
+31
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R13
+R14
+Econtrolador_prin
+Z25 w1480513596
+R3
+R16
+R2
+R17
+R18
+R4
+R5
+R0
+Z26 8C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd
+Z27 FC:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd
+l0
+L7
+VAFVGYN7[A]l`J^X3A17B]3
+!s100 9?<m2@TYMW3CLWO@Y5F791
+R8
+31
+R21
+!i10b 1
+R22
+Z28 !s90 -reportprogress|300|-93|-work|work|C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd|
+Z29 !s107 C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R3
+R16
+R2
+R17
+R18
+R4
+R5
+DEx4 work 16 controlador_prin 0 22 AFVGYN7[A]l`J^X3A17B]3
+l17
+L15
+VR58Wh3=>`DC6ZLIaHjNz63
+!s100 Ge>cD3NCB4FT4NWE:X^E62
+R8
+31
+R21
+!i10b 1
+R22
+R28
+R29
+!i113 1
+R13
+R14
+Edisplay_segs
+Z30 w1480511276
+R3
+R16
+R2
+R17
+R18
+R4
+R5
+R0
+Z31 8C:/altera_lite/16.0/Projetos/Microprocessor/display_segs.vhd
+Z32 FC:/altera_lite/16.0/Projetos/Microprocessor/display_segs.vhd
+l0
+L7
+V_WeI0^CYcOP:_Bi2]_>^H2
+!s100 jDBeOmV<9g[3bIg@:XKN>1
+R8
+31
+R21
+!i10b 1
+R22
+Z33 !s90 -reportprogress|300|-93|-work|work|C:/altera_lite/16.0/Projetos/Microprocessor/display_segs.vhd|
+Z34 !s107 C:/altera_lite/16.0/Projetos/Microprocessor/display_segs.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R3
+R16
+R2
+R17
+R18
+R4
+R5
+DEx4 work 12 display_segs 0 22 _WeI0^CYcOP:_Bi2]_>^H2
+l25
+L17
+VR=?jfFC<5YP6;=WIWR=M52
+!s100 >6g5ON@JMZfL[c4R8IZei2
+R8
+31
+R21
+!i10b 1
+R22
+R33
+R34
+!i113 1
+R13
+R14
+Pmicro_pack
+R2
+R3
+R4
+R5
+w1480513331
+R0
+8C:/altera_lite/16.0/Projetos/Microprocessor/output_files/MICRO_PACK.vhd
+FC:/altera_lite/16.0/Projetos/Microprocessor/output_files/MICRO_PACK.vhd
+l0
+L5
+VZLHe0i4FDbgN8Fo0YLLH82
+!s100 TFWTiA741e_87j?m^oKoV3
+R8
+31
+R21
+!i10b 1
+R10
+!s90 -reportprogress|300|-93|-work|work|C:/altera_lite/16.0/Projetos/Microprocessor/output_files/MICRO_PACK.vhd|
+!s107 C:/altera_lite/16.0/Projetos/Microprocessor/output_files/MICRO_PACK.vhd|
+!i113 1
+R13
+R14
+Emicroprocessor
+Z35 w1480509463
+R3
+R16
+R2
+R17
+R18
+R4
+R5
+R0
+Z36 8C:/altera_lite/16.0/Projetos/Microprocessor/microprocessor.vhd
+Z37 FC:/altera_lite/16.0/Projetos/Microprocessor/microprocessor.vhd
+l0
+L8
+V`G:LVK9JoOj[@2Rm3=mgL3
+!s100 oDaIYH:9mgNUd15Y1lQHm2
+R8
+31
+R21
+!i10b 1
+R22
+Z38 !s90 -reportprogress|300|-93|-work|work|C:/altera_lite/16.0/Projetos/Microprocessor/microprocessor.vhd|
+Z39 !s107 C:/altera_lite/16.0/Projetos/Microprocessor/microprocessor.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R3
+R16
+R2
+R17
+R18
+R4
+R5
+DEx4 work 14 microprocessor 0 22 `G:LVK9JoOj[@2Rm3=mgL3
+l36
+L18
+V1X9l^FCSFo]Hg44nEH9WF1
+!s100 @1<@gozM7e0gfFiEVKKKA0
+R8
+31
+R21
+!i10b 1
+R22
+R38
+R39
+!i113 1
+R13
+R14
