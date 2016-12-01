@@ -18,7 +18,7 @@ ARCHITECTURE BEHAVIOR OF CONTROLADOR_PRIN IS
 	BEGIN
 
 -- PROCESS FASE 1 a 3
-	PROCESS (CURRENT_FASE)
+	PROCESS (CURRENT_FASE, SC)
 	
 	
 	 VARIABLE PRIN_MEM: MEM_ROM;	
@@ -46,8 +46,8 @@ ARCHITECTURE BEHAVIOR OF CONTROLADOR_PRIN IS
 			WHEN F_RESET =>
 				
 				 PRIN_MEM(0) := "0000000001000001";
-             PRIN_MEM(1) := "0000000010010010";
-             PRIN_MEM(2) := "0000000001000100";  
+             PRIN_MEM(1) := "0000000010010011";
+				 PRIN_MEM(2) := "0000000001000010";
              PRIN_MEM(3) := "0000000000000000";
              PRIN_MEM(4) := "0000000000001000";
              PRIN_MEM(5) := "0000000000000000";
@@ -102,6 +102,8 @@ ARCHITECTURE BEHAVIOR OF CONTROLADOR_PRIN IS
 						BUS_ULA1 := x"0000";
 
 					WHEN OTHERS =>
+						-- warning
+						BUS_ULA1 :=  BUS_ULA1;
 				
 				END CASE;
 			
@@ -129,6 +131,8 @@ ARCHITECTURE BEHAVIOR OF CONTROLADOR_PRIN IS
 						BUS_ULA2 := x"0000";
 
 					WHEN OTHERS =>
+						-- warning
+						BUS_ULA2 := BUS_ULA2;
 				
 				END CASE;
 			
@@ -148,6 +152,8 @@ ARCHITECTURE BEHAVIOR OF CONTROLADOR_PRIN IS
 						BUS_EXT3 := std_logic_vector(unsigned(BUS_ULA1) + unsigned(BUS_ULA2));
 					
 					WHEN OTHERS =>
+						-- warning
+						BUS_EXT3 := BUS_EXT3;
 					
 				
 				END CASE;
@@ -212,6 +218,8 @@ ARCHITECTURE BEHAVIOR OF CONTROLADOR_PRIN IS
 
 				WHEN OTHERS =>
 				
+					RDM := RDM;
+				
 				END CASE;
 			
 			
@@ -223,7 +231,13 @@ ARCHITECTURE BEHAVIOR OF CONTROLADOR_PRIN IS
 				end if;
 			
 			WHEN OTHERS =>
-			
+				
+--				PC_OUT 		 <= PC_OUT;
+--				BUS_ULA1_OUT <= BUS_ULA1_OUT;
+--				BUS_ULA2_OUT <= BUS_ULA2_OUT;
+--				BUS_EXT3_OUT <= BUS_EXT3_OUT;
+--				IR_OUT		 <= IR_OUT;
+--				ACC			 <= ACC;
 			
 		END CASE;
 	

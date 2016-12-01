@@ -2,92 +2,68 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'CURRENT_FASE.f_2'
-Slack : -17.381
-TNS   : -442.757
+Type  : Slow 1200mV 85C Model Setup 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector15~0'
+Slack : -12.573
+TNS   : -180.027
 
 Type  : Slow 1200mV 85C Model Setup 'CURRENT_FASE.f_reset'
-Slack : -17.302
-TNS   : -9716.461
-
-Type  : Slow 1200mV 85C Model Setup 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector18~0'
-Slack : -15.554
-TNS   : -236.942
+Slack : -12.559
+TNS   : -3795.901
 
 Type  : Slow 1200mV 85C Model Setup 'CURRENT_FASE.f_1'
-Slack : -14.604
-TNS   : -1166.732
+Slack : -11.391
+TNS   : -791.886
 
-Type  : Slow 1200mV 85C Model Setup 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0]'
-Slack : -14.587
-TNS   : -7015.165
+Type  : Slow 1200mV 85C Model Setup 'CURRENT_FASE.f_2'
+Slack : -11.274
+TNS   : -332.432
 
 Type  : Slow 1200mV 85C Model Setup 'CURRENT_FASE.f_4'
-Slack : -13.727
-TNS   : -524.333
+Slack : -7.664
+TNS   : -294.195
 
 Type  : Slow 1200mV 85C Model Setup 'CLOCK_DIV:CLK_1|SLOW_COUNT[26]'
-Slack : -8.446
-TNS   : -18.511
-
-Type  : Slow 1200mV 85C Model Setup 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector26~0'
-Slack : -4.390
-TNS   : -36.456
-
-Type  : Slow 1200mV 85C Model Setup 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector21~0'
-Slack : -3.692
-TNS   : -14.721
+Slack : -6.125
+TNS   : -14.047
 
 Type  : Slow 1200mV 85C Model Setup 'CLK'
-Slack : -2.280
-TNS   : -33.882
-
-Type  : Slow 1200mV 85C Model Hold 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0]'
-Slack : -2.572
-TNS   : -15.092
-
-Type  : Slow 1200mV 85C Model Hold 'CLOCK_DIV:CLK_1|SLOW_COUNT[26]'
-Slack : -1.520
-TNS   : -1.520
+Slack : -2.279
+TNS   : -33.888
 
 Type  : Slow 1200mV 85C Model Hold 'CURRENT_FASE.f_reset'
-Slack : -0.452
-TNS   : -0.452
+Slack : -0.706
+TNS   : -8.721
+
+Type  : Slow 1200mV 85C Model Hold 'CURRENT_FASE.f_2'
+Slack : 0.056
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'CURRENT_FASE.f_4'
-Slack : -0.105
-TNS   : -0.105
-
-Type  : Slow 1200mV 85C Model Hold 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector26~0'
-Slack : 0.229
+Slack : 0.056
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'CLK'
-Slack : 0.410
+Slack : 0.407
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'CURRENT_FASE.f_2'
-Slack : 0.454
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_DIV:CLK_1|SLOW_COUNT[26]'
+Slack : 0.569
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'CURRENT_FASE.f_1'
-Slack : 0.639
+Slack : 0.591
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector21~0'
-Slack : 0.711
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector18~0'
-Slack : 1.649
+Type  : Slow 1200mV 85C Model Hold 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector15~0'
+Slack : 0.971
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'CURRENT_FASE.f_reset'
-Slack : -10.498
-TNS   : -18.663
+Slack : -6.059
+TNS   : -11.171
 
 Type  : Slow 1200mV 85C Model Removal 'CURRENT_FASE.f_reset'
-Slack : 1.412
+Slack : 1.118
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
@@ -95,295 +71,211 @@ Slack : -3.000
 TNS   : -37.695
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CURRENT_FASE.f_reset'
-Slack : -2.413
-TNS   : -335.217
+Slack : -1.294
+TNS   : -195.642
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_DIV:CLK_1|SLOW_COUNT[26]'
 Slack : -1.285
 TNS   : -7.710
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0]'
-Slack : -1.282
-TNS   : -3007.420
-
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CURRENT_FASE.f_4'
-Slack : -1.120
-TNS   : -45.490
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector26~0'
-Slack : 0.398
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector18~0'
-Slack : 0.411
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CURRENT_FASE.f_2'
-Slack : 0.415
+Slack : 0.097
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CURRENT_FASE.f_1'
-Slack : 0.418
+Slack : 0.365
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector21~0'
-Slack : 0.432
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CURRENT_FASE.f_2'
+Slack : 0.385
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'CURRENT_FASE.f_2'
-Slack : -15.920
-TNS   : -404.039
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector15~0'
+Slack : 0.436
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector15~0'
+Slack : -11.404
+TNS   : -161.983
 
 Type  : Slow 1200mV 0C Model Setup 'CURRENT_FASE.f_reset'
-Slack : -15.749
-TNS   : -8921.838
-
-Type  : Slow 1200mV 0C Model Setup 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector18~0'
-Slack : -14.192
-TNS   : -215.170
+Slack : -11.385
+TNS   : -3503.559
 
 Type  : Slow 1200mV 0C Model Setup 'CURRENT_FASE.f_1'
-Slack : -13.500
-TNS   : -1074.697
+Slack : -10.482
+TNS   : -737.084
 
-Type  : Slow 1200mV 0C Model Setup 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0]'
-Slack : -13.413
-TNS   : -6409.956
+Type  : Slow 1200mV 0C Model Setup 'CURRENT_FASE.f_2'
+Slack : -10.197
+TNS   : -302.276
 
 Type  : Slow 1200mV 0C Model Setup 'CURRENT_FASE.f_4'
-Slack : -12.662
-TNS   : -480.548
+Slack : -7.084
+TNS   : -270.438
 
 Type  : Slow 1200mV 0C Model Setup 'CLOCK_DIV:CLK_1|SLOW_COUNT[26]'
-Slack : -7.625
-TNS   : -16.434
-
-Type  : Slow 1200mV 0C Model Setup 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector26~0'
-Slack : -4.190
-TNS   : -34.369
-
-Type  : Slow 1200mV 0C Model Setup 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector21~0'
-Slack : -3.501
-TNS   : -13.630
+Slack : -5.616
+TNS   : -12.549
 
 Type  : Slow 1200mV 0C Model Setup 'CLK'
-Slack : -1.924
-TNS   : -27.394
-
-Type  : Slow 1200mV 0C Model Hold 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0]'
-Slack : -2.350
-TNS   : -14.315
-
-Type  : Slow 1200mV 0C Model Hold 'CLOCK_DIV:CLK_1|SLOW_COUNT[26]'
-Slack : -1.435
-TNS   : -1.435
+Slack : -1.923
+TNS   : -27.413
 
 Type  : Slow 1200mV 0C Model Hold 'CURRENT_FASE.f_reset'
-Slack : -0.406
-TNS   : -0.406
+Slack : -0.756
+TNS   : -9.173
 
 Type  : Slow 1200mV 0C Model Hold 'CURRENT_FASE.f_4'
-Slack : -0.104
-TNS   : -0.104
-
-Type  : Slow 1200mV 0C Model Hold 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector26~0'
-Slack : 0.194
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'CLK'
-Slack : 0.368
+Slack : 0.024
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'CURRENT_FASE.f_2'
-Slack : 0.396
+Slack : 0.040
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.364
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'CURRENT_FASE.f_1'
-Slack : 0.563
+Slack : 0.529
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector21~0'
-Slack : 0.609
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_DIV:CLK_1|SLOW_COUNT[26]'
+Slack : 0.534
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector18~0'
-Slack : 1.506
+Type  : Slow 1200mV 0C Model Hold 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector15~0'
+Slack : 0.880
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'CURRENT_FASE.f_reset'
-Slack : -9.558
-TNS   : -16.911
+Slack : -5.531
+TNS   : -10.167
 
 Type  : Slow 1200mV 0C Model Removal 'CURRENT_FASE.f_reset'
-Slack : 1.264
+Slack : 1.033
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
 TNS   : -37.695
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CURRENT_FASE.f_reset'
-Slack : -2.152
-TNS   : -296.028
-
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_DIV:CLK_1|SLOW_COUNT[26]'
 Slack : -1.285
 TNS   : -7.710
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0]'
-Slack : -1.205
-TNS   : -2519.065
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CURRENT_FASE.f_reset'
+Slack : -1.161
+TNS   : -168.669
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CURRENT_FASE.f_4'
-Slack : -0.922
-TNS   : -36.918
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector26~0'
-Slack : 0.255
+Slack : 0.137
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CURRENT_FASE.f_2'
-Slack : 0.292
+Slack : 0.335
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector18~0'
-Slack : 0.311
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CURRENT_FASE.f_1'
-Slack : 0.312
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector21~0'
-Slack : 0.323
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'CURRENT_FASE.f_reset'
-Slack : -8.802
-TNS   : -4904.580
-
-Type  : Fast 1200mV 0C Model Setup 'CURRENT_FASE.f_2'
-Slack : -8.681
-TNS   : -202.075
-
-Type  : Fast 1200mV 0C Model Setup 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector18~0'
-Slack : -7.650
-TNS   : -115.268
-
-Type  : Fast 1200mV 0C Model Setup 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0]'
-Slack : -7.279
-TNS   : -3675.659
-
-Type  : Fast 1200mV 0C Model Setup 'CURRENT_FASE.f_1'
-Slack : -6.977
-TNS   : -541.385
-
-Type  : Fast 1200mV 0C Model Setup 'CURRENT_FASE.f_4'
-Slack : -6.638
-TNS   : -256.678
-
-Type  : Fast 1200mV 0C Model Setup 'CLOCK_DIV:CLK_1|SLOW_COUNT[26]'
-Slack : -3.989
-TNS   : -8.663
-
-Type  : Fast 1200mV 0C Model Setup 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector26~0'
-Slack : -1.688
-TNS   : -12.625
-
-Type  : Fast 1200mV 0C Model Setup 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector21~0'
-Slack : -1.412
-TNS   : -5.334
-
-Type  : Fast 1200mV 0C Model Setup 'CLK'
-Slack : -0.739
-TNS   : -4.612
-
-Type  : Fast 1200mV 0C Model Hold 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0]'
-Slack : -1.242
-TNS   : -8.289
-
-Type  : Fast 1200mV 0C Model Hold 'CLOCK_DIV:CLK_1|SLOW_COUNT[26]'
-Slack : -0.748
-TNS   : -0.748
-
-Type  : Fast 1200mV 0C Model Hold 'CURRENT_FASE.f_reset'
-Slack : -0.129
-TNS   : -0.129
-
-Type  : Fast 1200mV 0C Model Hold 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector26~0'
-Slack : -0.067
-TNS   : -0.123
-
-Type  : Fast 1200mV 0C Model Hold 'CURRENT_FASE.f_4'
-Slack : 0.059
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'CURRENT_FASE.f_2'
-Slack : 0.189
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'CLK'
-Slack : 0.191
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'CURRENT_FASE.f_1'
-Slack : 0.318
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector21~0'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector15~0'
 Slack : 0.359
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector18~0'
-Slack : 0.658
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CURRENT_FASE.f_1'
+Slack : 0.381
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CURRENT_FASE.f_reset'
+Slack : -6.450
+TNS   : -1735.699
+
+Type  : Fast 1200mV 0C Model Setup 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector15~0'
+Slack : -6.165
+TNS   : -86.034
+
+Type  : Fast 1200mV 0C Model Setup 'CURRENT_FASE.f_2'
+Slack : -5.389
+TNS   : -144.736
+
+Type  : Fast 1200mV 0C Model Setup 'CURRENT_FASE.f_1'
+Slack : -5.386
+TNS   : -358.334
+
+Type  : Fast 1200mV 0C Model Setup 'CURRENT_FASE.f_4'
+Slack : -3.741
+TNS   : -137.377
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_DIV:CLK_1|SLOW_COUNT[26]'
+Slack : -2.830
+TNS   : -6.186
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -0.725
+TNS   : -4.597
+
+Type  : Fast 1200mV 0C Model Hold 'CURRENT_FASE.f_reset'
+Slack : -0.293
+TNS   : -3.428
+
+Type  : Fast 1200mV 0C Model Hold 'CURRENT_FASE.f_4'
+Slack : 0.000
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CURRENT_FASE.f_2'
+Slack : 0.026
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.188
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CURRENT_FASE.f_1'
+Slack : 0.250
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_DIV:CLK_1|SLOW_COUNT[26]'
+Slack : 0.274
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector15~0'
+Slack : 0.481
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'CURRENT_FASE.f_reset'
-Slack : -4.961
-TNS   : -8.731
+Slack : -2.733
+TNS   : -4.999
 
 Type  : Fast 1200mV 0C Model Removal 'CURRENT_FASE.f_reset'
-Slack : 0.650
+Slack : 0.529
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -31.851
+TNS   : -31.843
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_DIV:CLK_1|SLOW_COUNT[26]'
 Slack : -1.000
 TNS   : -6.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CURRENT_FASE.f_reset'
-Slack : -0.969
-TNS   : -108.955
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0]'
-Slack : -0.485
-TNS   : -404.931
+Slack : -0.414
+TNS   : -39.143
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CURRENT_FASE.f_4'
-Slack : -0.376
-TNS   : -9.496
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector26~0'
-Slack : 0.228
+Slack : 0.220
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CURRENT_FASE.f_2'
-Slack : 0.294
+Slack : 0.261
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CURRENT_FASE.f_1'
-Slack : 0.296
+Slack : 0.263
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector21~0'
-Slack : 0.332
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector18~0'
-Slack : 0.341
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector15~0'
+Slack : 0.367
 TNS   : 0.000
 
 ------------------------------------------------------------

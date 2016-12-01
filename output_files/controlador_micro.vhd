@@ -18,7 +18,7 @@ ARCHITECTURE BEHAVIOR OF CONTROLADOR_MICRO IS
 	BEGIN
 
 -- PROCESS FASE 4 E 5	
-	PROCESS (CURRENT_FASE)
+	PROCESS (CURRENT_FASE, ACC, IR)
 	
 	 VARIABLE BUS_INT1: std_logic_vector(9 downto 0);
     VARIABLE BUS_INT2: std_logic_vector(9 downto 0);
@@ -134,6 +134,8 @@ ARCHITECTURE BEHAVIOR OF CONTROLADOR_MICRO IS
 							
 					WHEN OTHERS =>
 					
+						  BUS_INT2 := "00" & x"00";
+
 		
 				END CASE;
 				
@@ -147,6 +149,10 @@ ARCHITECTURE BEHAVIOR OF CONTROLADOR_MICRO IS
 				SC := MIC_MEM(to_integer(unsigned(MPC)));
 				
 			WHEN OTHERS => 
+			
+--			SC_OUT <= SC_OUT;
+		
+--			MPC_OUT <= MPC_OUT;
 			
 		END CASE;
 		

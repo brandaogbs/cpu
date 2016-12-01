@@ -1,5 +1,5 @@
 Fitter report for microprocessor
-Wed Nov 30 20:17:52 2016
+Thu Dec 01 12:16:06 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -69,15 +69,15 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Wed Nov 30 20:17:52 2016       ;
+; Fitter Status                      ; Successful - Thu Dec 01 12:16:06 2016       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; microprocessor                              ;
 ; Top-level Entity Name              ; MICROPROCESSOR                              ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 2,221 / 114,480 ( 2 % )                     ;
-;     Total combinational functions  ; 2,221 / 114,480 ( 2 % )                     ;
+; Total logic elements               ; 2,220 / 114,480 ( 2 % )                     ;
+;     Total combinational functions  ; 2,220 / 114,480 ( 2 % )                     ;
 ;     Dedicated logic registers      ; 33 / 114,480 ( < 1 % )                      ;
 ; Total registers                    ; 33                                          ;
 ; Total pins                         ; 45 / 529 ( 9 % )                            ;
@@ -157,12 +157,12 @@ agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.03        ;
+; Average used               ; 1.07        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   3.2%      ;
+;     Processor 2            ;   6.6%      ;
 +----------------------------+-------------+
 
 
@@ -234,8 +234,8 @@ agreement for further details.
 ; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+---------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 2374 ) ; 0.00 % ( 0 / 2374 )        ; 0.00 % ( 0 / 2374 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 2374 ) ; 0.00 % ( 0 / 2374 )        ; 0.00 % ( 0 / 2374 )      ;
+;     -- Requested    ; 0.00 % ( 0 / 2373 ) ; 0.00 % ( 0 / 2373 )        ; 0.00 % ( 0 / 2373 )      ;
+;     -- Achieved     ; 0.00 % ( 0 / 2373 ) ; 0.00 % ( 0 / 2373 )        ; 0.00 % ( 0 / 2373 )      ;
 ;                     ;                     ;                            ;                          ;
 ; Routing (by net)    ;                     ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -258,7 +258,7 @@ agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 2364 )   ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 2363 )   ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -266,7 +266,7 @@ agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/altera_lite/16.0/Projetos/Microprocessor/output_files/microprocessor.pin.
+The pin-out file can be found in C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/output_files/microprocessor.pin.
 
 
 +-----------------------------------------------------------------------+
@@ -274,26 +274,26 @@ The pin-out file can be found in C:/altera_lite/16.0/Projetos/Microprocessor/out
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Total logic elements                        ; 2,221 / 114,480 ( 2 % ) ;
-;     -- Combinational with no register       ; 2188                    ;
+; Total logic elements                        ; 2,220 / 114,480 ( 2 % ) ;
+;     -- Combinational with no register       ; 2187                    ;
 ;     -- Register only                        ; 0                       ;
 ;     -- Combinational with a register        ; 33                      ;
 ;                                             ;                         ;
 ; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 928                     ;
-;     -- 3 input functions                    ; 1157                    ;
-;     -- <=2 input functions                  ; 136                     ;
+;     -- 4 input functions                    ; 929                     ;
+;     -- 3 input functions                    ; 1156                    ;
+;     -- <=2 input functions                  ; 135                     ;
 ;     -- Register only                        ; 0                       ;
 ;                                             ;                         ;
 ; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 2172                    ;
+;     -- normal mode                          ; 2171                    ;
 ;     -- arithmetic mode                      ; 49                      ;
 ;                                             ;                         ;
 ; Total registers*                            ; 33 / 117,053 ( < 1 % )  ;
 ;     -- Dedicated logic registers            ; 33 / 114,480 ( < 1 % )  ;
 ;     -- I/O registers                        ; 0 / 2,573 ( 0 % )       ;
 ;                                             ;                         ;
-; Total LABs:  partially or completely used   ; 181 / 7,155 ( 3 % )     ;
+; Total LABs:  partially or completely used   ; 174 / 7,155 ( 2 % )     ;
 ; Virtual pins                                ; 0                       ;
 ; I/O pins                                    ; 45 / 529 ( 9 % )        ;
 ;     -- Clock pins                           ; 1 / 7 ( 14 % )          ;
@@ -311,11 +311,11 @@ The pin-out file can be found in C:/altera_lite/16.0/Projetos/Microprocessor/out
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )           ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )           ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )           ;
-; Average interconnect usage (total/H/V)      ; 2.3% / 2.2% / 2.5%      ;
-; Peak interconnect usage (total/H/V)         ; 31.8% / 30.2% / 36.1%   ;
+; Average interconnect usage (total/H/V)      ; 1.5% / 1.3% / 1.8%      ;
+; Peak interconnect usage (total/H/V)         ; 37.8% / 34.4% / 42.7%   ;
 ; Maximum fan-out                             ; 221                     ;
 ; Highest non-global fan-out                  ; 221                     ;
-; Total fan-out                               ; 7661                    ;
+; Total fan-out                               ; 7660                    ;
 ; Average fan-out                             ; 3.23                    ;
 +---------------------------------------------+-------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
@@ -329,26 +329,26 @@ The pin-out file can be found in C:/altera_lite/16.0/Projetos/Microprocessor/out
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 2221 / 114480 ( 2 % ) ; 0 / 114480 ( 0 % )             ;
-;     -- Combinational with no register       ; 2188                  ; 0                              ;
+; Total logic elements                        ; 2220 / 114480 ( 2 % ) ; 0 / 114480 ( 0 % )             ;
+;     -- Combinational with no register       ; 2187                  ; 0                              ;
 ;     -- Register only                        ; 0                     ; 0                              ;
 ;     -- Combinational with a register        ; 33                    ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 928                   ; 0                              ;
-;     -- 3 input functions                    ; 1157                  ; 0                              ;
-;     -- <=2 input functions                  ; 136                   ; 0                              ;
+;     -- 4 input functions                    ; 929                   ; 0                              ;
+;     -- 3 input functions                    ; 1156                  ; 0                              ;
+;     -- <=2 input functions                  ; 135                   ; 0                              ;
 ;     -- Register only                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 2172                  ; 0                              ;
+;     -- normal mode                          ; 2171                  ; 0                              ;
 ;     -- arithmetic mode                      ; 49                    ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Total registers                             ; 33                    ; 0                              ;
 ;     -- Dedicated logic registers            ; 33 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
 ;     -- I/O registers                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 181 / 7155 ( 3 % )    ; 0 / 7155 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 174 / 7155 ( 2 % )    ; 0 / 7155 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 45                    ; 0                              ;
@@ -364,8 +364,8 @@ The pin-out file can be found in C:/altera_lite/16.0/Projetos/Microprocessor/out
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 7656                  ; 5                              ;
-;     -- Registered Connections               ; 327                   ; 0                              ;
+;     -- Total Connections                    ; 7655                  ; 5                              ;
+;     -- Registered Connections               ; 317                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
 ;     -- Top                                  ; 0                     ; 0                              ;
@@ -1284,10 +1284,10 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +--------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node                 ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                   ; Entity Name       ; Library Name ;
 +--------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------+-------------------+--------------+
-; |MICROPROCESSOR                            ; 2221 (6)    ; 33 (6)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 45   ; 0            ; 2188 (0)     ; 0 (0)             ; 33 (3)           ; |MICROPROCESSOR                                       ; MICROPROCESSOR    ; work         ;
+; |MICROPROCESSOR                            ; 2220 (6)    ; 33 (6)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 45   ; 0            ; 2187 (0)     ; 0 (0)             ; 33 (3)           ; |MICROPROCESSOR                                       ; MICROPROCESSOR    ; work         ;
 ;    |CLOCK_DIV:CLK_1|                       ; 27 (27)     ; 27 (27)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 27 (27)          ; |MICROPROCESSOR|CLOCK_DIV:CLK_1                       ; CLOCK_DIV         ; work         ;
-;    |CONTROLADOR_MICRO:CONTROLADOR_MICRO_1| ; 87 (87)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 87 (87)      ; 0 (0)             ; 0 (0)            ; |MICROPROCESSOR|CONTROLADOR_MICRO:CONTROLADOR_MICRO_1 ; CONTROLADOR_MICRO ; work         ;
-;    |CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|   ; 1925 (1925) ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1922 (1922)  ; 0 (0)             ; 3 (3)            ; |MICROPROCESSOR|CONTROLADOR_PRIN:CONTROLADOR_PRIN_1   ; CONTROLADOR_PRIN  ; work         ;
+;    |CONTROLADOR_MICRO:CONTROLADOR_MICRO_1| ; 87 (87)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 86 (86)      ; 0 (0)             ; 1 (1)            ; |MICROPROCESSOR|CONTROLADOR_MICRO:CONTROLADOR_MICRO_1 ; CONTROLADOR_MICRO ; work         ;
+;    |CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|   ; 1924 (1924) ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1922 (1922)  ; 0 (0)             ; 2 (2)            ; |MICROPROCESSOR|CONTROLADOR_PRIN:CONTROLADOR_PRIN_1   ; CONTROLADOR_PRIN  ; work         ;
 ;    |DISPLAY_SEGS:DISPLAY_SEGS_1|           ; 179 (179)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 179 (179)    ; 0 (0)             ; 0 (0)            ; |MICROPROCESSOR|DISPLAY_SEGS:DISPLAY_SEGS_1           ; DISPLAY_SEGS      ; work         ;
 +--------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -1341,7 +1341,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; display_segs6[4] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; display_segs6[5] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; display_segs6[6] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; RST              ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; RST              ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; CLK              ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 +------------------+----------+---------------+---------------+-----------------------+-----+------+
 
@@ -1352,39 +1352,39 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout                   ; Pad To Core Index ; Setting ;
 +---------------------------------------+-------------------+---------+
 ; RST                                   ;                   ;         ;
-;      - CURRENT_FASE.f_reset           ; 1                 ; 6       ;
-;      - CURRENT_FASE.f_1               ; 1                 ; 6       ;
-;      - CURRENT_FASE.f_2               ; 1                 ; 6       ;
-;      - CURRENT_FASE.f_3               ; 1                 ; 6       ;
-;      - CURRENT_FASE.f_4               ; 1                 ; 6       ;
-;      - CURRENT_FASE.f_5               ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[26] ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[25] ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[24] ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[23] ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[22] ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[21] ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[20] ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[19] ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[18] ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[17] ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[16] ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[15] ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[14] ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[13] ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[12] ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[11] ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[10] ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[9]  ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[8]  ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[7]  ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[6]  ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[5]  ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[4]  ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[3]  ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[2]  ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[1]  ; 1                 ; 6       ;
-;      - CLOCK_DIV:CLK_1|SLOW_COUNT[0]  ; 1                 ; 6       ;
+;      - CURRENT_FASE.f_reset           ; 0                 ; 6       ;
+;      - CURRENT_FASE.f_1               ; 0                 ; 6       ;
+;      - CURRENT_FASE.f_2               ; 0                 ; 6       ;
+;      - CURRENT_FASE.f_3               ; 0                 ; 6       ;
+;      - CURRENT_FASE.f_4               ; 0                 ; 6       ;
+;      - CURRENT_FASE.f_5               ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[26] ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[25] ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[24] ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[23] ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[22] ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[21] ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[20] ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[19] ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[18] ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[17] ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[16] ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[15] ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[14] ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[13] ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[12] ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[11] ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[10] ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[9]  ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[8]  ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[7]  ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[6]  ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[5]  ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[4]  ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[3]  ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[2]  ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[1]  ; 0                 ; 6       ;
+;      - CLOCK_DIV:CLK_1|SLOW_COUNT[0]  ; 0                 ; 6       ;
 ; CLK                                   ;                   ;         ;
 +---------------------------------------+-------------------+---------+
 
@@ -1395,71 +1395,70 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                   ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; CLK                                                    ; PIN_Y2             ; 27      ; Clock        ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; CLOCK_DIV:CLK_1|SLOW_COUNT[26]                         ; FF_X86_Y21_N25     ; 7       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1~0       ; LCCOMB_X60_Y23_N20 ; 4       ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector5~0      ; LCCOMB_X65_Y21_N16 ; 10      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[21][0]~1  ; LCCOMB_X58_Y24_N28 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK18           ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[22][0]~8  ; LCCOMB_X59_Y29_N14 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK9            ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[23][0]~2  ; LCCOMB_X59_Y29_N28 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK8            ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[24][0]~6  ; LCCOMB_X60_Y28_N28 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK11           ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[25][0]~11 ; LCCOMB_X60_Y28_N22 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK10           ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[26][0]~5  ; LCCOMB_X59_Y27_N2  ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK19           ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[27][0]~10 ; LCCOMB_X59_Y27_N10 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK14           ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[28][0]~4  ; LCCOMB_X58_Y24_N26 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK17           ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[29][0]~9  ; LCCOMB_X59_Y19_N24 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK16           ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[30][0]~7  ; LCCOMB_X59_Y29_N18 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK7            ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[31][0]~12 ; LCCOMB_X59_Y29_N2  ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[32][0]~23 ; LCCOMB_X57_Y31_N12 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[33][0]~21 ; LCCOMB_X57_Y31_N0  ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK1            ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[34][0]~15 ; LCCOMB_X56_Y29_N26 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK13           ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[35][0]~13 ; LCCOMB_X56_Y29_N18 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK12           ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[36][0]~19 ; LCCOMB_X57_Y28_N18 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK0            ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[37][0]~18 ; LCCOMB_X57_Y28_N8  ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[38][0]~27 ; LCCOMB_X59_Y29_N8  ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK5            ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[39][0]~26 ; LCCOMB_X59_Y29_N0  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[40][0]~22 ; LCCOMB_X57_Y31_N30 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[41][0]~24 ; LCCOMB_X57_Y31_N2  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[42][0]~14 ; LCCOMB_X56_Y29_N30 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[43][0]~16 ; LCCOMB_X56_Y29_N6  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[44][0]~17 ; LCCOMB_X57_Y28_N20 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[45][0]~20 ; LCCOMB_X57_Y29_N0  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[46][0]~25 ; LCCOMB_X59_Y29_N24 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[47][0]~28 ; LCCOMB_X59_Y29_N30 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[48][0]~29 ; LCCOMB_X59_Y26_N20 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[49][0]~30 ; LCCOMB_X54_Y23_N16 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector101~0      ; LCCOMB_X62_Y23_N16 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector103~0      ; LCCOMB_X59_Y27_N30 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector119~0      ; LCCOMB_X59_Y27_N18 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector120~0      ; LCCOMB_X59_Y27_N8  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector121~0      ; LCCOMB_X60_Y27_N0  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector122~0      ; LCCOMB_X60_Y28_N14 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector123~0      ; LCCOMB_X58_Y25_N0  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector124~0      ; LCCOMB_X58_Y25_N8  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector125~0      ; LCCOMB_X57_Y25_N24 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector126~0      ; LCCOMB_X57_Y25_N30 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector127~0      ; LCCOMB_X57_Y25_N26 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector128~0      ; LCCOMB_X57_Y25_N0  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector130~0      ; LCCOMB_X56_Y26_N24 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector132~0      ; LCCOMB_X56_Y26_N30 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector133~0      ; LCCOMB_X55_Y25_N0  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector134~0      ; LCCOMB_X55_Y25_N6  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector135~0      ; LCCOMB_X55_Y25_N24 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector136~0      ; LCCOMB_X55_Y25_N30 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector138~0      ; LCCOMB_X58_Y27_N14 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector139~0      ; LCCOMB_X58_Y27_N24 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector142~0      ; LCCOMB_X56_Y26_N10 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector145~0      ; LCCOMB_X56_Y26_N0  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector1~0        ; LCCOMB_X60_Y20_N30 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector35~2       ; LCCOMB_X62_Y20_N30 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector69~0       ; LCCOMB_X59_Y23_N4  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector70~0       ; LCCOMB_X61_Y25_N12 ; 6       ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector72~1       ; LCCOMB_X59_Y25_N14 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector89~0       ; LCCOMB_X59_Y23_N18 ; 12      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector89~1       ; LCCOMB_X60_Y23_N6  ; 4       ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CURRENT_FASE.f_1                                       ; FF_X60_Y21_N9      ; 48      ; Latch enable ; yes    ; Global Clock         ; GCLK15           ; --                        ;
-; CURRENT_FASE.f_2                                       ; FF_X60_Y23_N31     ; 57      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; CURRENT_FASE.f_reset                                   ; FF_X60_Y21_N31     ; 60      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; DISPLAY_SEGS:DISPLAY_SEGS_1|display_segs6[0]~0         ; LCCOMB_X60_Y22_N0  ; 17      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CLOCK_DIV:CLK_1|SLOW_COUNT[26]                         ; FF_X63_Y33_N25     ; 7       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1~0       ; LCCOMB_X68_Y30_N6  ; 14      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[21][0]~1  ; LCCOMB_X60_Y29_N8  ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK17           ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[22][0]~8  ; LCCOMB_X60_Y29_N18 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK11           ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[23][0]~2  ; LCCOMB_X60_Y29_N6  ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[24][0]~6  ; LCCOMB_X57_Y28_N12 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK16           ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[25][0]~11 ; LCCOMB_X57_Y28_N8  ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[26][0]~5  ; LCCOMB_X60_Y29_N10 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK8            ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[27][0]~10 ; LCCOMB_X60_Y29_N22 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK13           ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[28][0]~4  ; LCCOMB_X60_Y29_N28 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK9            ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[29][0]~9  ; LCCOMB_X60_Y29_N24 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK18           ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[30][0]~7  ; LCCOMB_X60_Y29_N2  ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK15           ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[31][0]~12 ; LCCOMB_X60_Y29_N14 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK7            ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[32][0]~23 ; LCCOMB_X57_Y28_N16 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK0            ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[33][0]~21 ; LCCOMB_X57_Y28_N10 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK19           ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[34][0]~15 ; LCCOMB_X54_Y29_N28 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK14           ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[35][0]~13 ; LCCOMB_X54_Y29_N4  ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK10           ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[36][0]~19 ; LCCOMB_X53_Y32_N24 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK3            ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[37][0]~18 ; LCCOMB_X53_Y32_N8  ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK1            ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[38][0]~27 ; LCCOMB_X56_Y33_N12 ; 16      ; Latch enable ; yes    ; Global Clock         ; GCLK12           ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[39][0]~26 ; LCCOMB_X57_Y33_N0  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[40][0]~22 ; LCCOMB_X57_Y28_N24 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[41][0]~24 ; LCCOMB_X57_Y28_N14 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[42][0]~14 ; LCCOMB_X54_Y29_N0  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[43][0]~16 ; LCCOMB_X54_Y29_N10 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[44][0]~17 ; LCCOMB_X53_Y32_N6  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[45][0]~20 ; LCCOMB_X53_Y32_N16 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[46][0]~25 ; LCCOMB_X56_Y33_N30 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[47][0]~28 ; LCCOMB_X56_Y33_N6  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[48][0]~29 ; LCCOMB_X54_Y32_N18 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[49][0]~30 ; LCCOMB_X54_Y32_N20 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector101~0      ; LCCOMB_X66_Y32_N30 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector103~0      ; LCCOMB_X57_Y25_N0  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector119~0      ; LCCOMB_X59_Y25_N18 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector120~0      ; LCCOMB_X61_Y26_N0  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector121~0      ; LCCOMB_X57_Y28_N22 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector122~0      ; LCCOMB_X57_Y28_N2  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector123~0      ; LCCOMB_X59_Y27_N0  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector124~0      ; LCCOMB_X60_Y27_N30 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector125~0      ; LCCOMB_X60_Y28_N26 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector126~0      ; LCCOMB_X59_Y25_N30 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector127~0      ; LCCOMB_X60_Y29_N0  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector128~0      ; LCCOMB_X60_Y28_N8  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector130~0      ; LCCOMB_X60_Y27_N0  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector132~0      ; LCCOMB_X60_Y27_N26 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector133~0      ; LCCOMB_X61_Y28_N6  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector134~0      ; LCCOMB_X63_Y27_N6  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector135~0      ; LCCOMB_X59_Y25_N8  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector136~0      ; LCCOMB_X59_Y25_N0  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector138~0      ; LCCOMB_X60_Y28_N18 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector139~0      ; LCCOMB_X60_Y28_N30 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector141~0      ; LCCOMB_X60_Y27_N4  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector144~0      ; LCCOMB_X60_Y27_N28 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector1~0        ; LCCOMB_X66_Y27_N0  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector35~2       ; LCCOMB_X67_Y32_N30 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector69~0       ; LCCOMB_X66_Y32_N6  ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector70~0       ; LCCOMB_X62_Y29_N26 ; 6       ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector72~1       ; LCCOMB_X58_Y30_N18 ; 16      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector89~0       ; LCCOMB_X58_Y30_N0  ; 12      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector89~1       ; LCCOMB_X59_Y30_N28 ; 4       ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CURRENT_FASE.f_1                                       ; FF_X66_Y30_N13     ; 48      ; Latch enable ; yes    ; Global Clock         ; GCLK5            ; --                        ;
+; CURRENT_FASE.f_2                                       ; FF_X62_Y29_N25     ; 57      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; CURRENT_FASE.f_reset                                   ; FF_X66_Y30_N29     ; 59      ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; DISPLAY_SEGS:DISPLAY_SEGS_1|display_segs6[0]~0         ; LCCOMB_X67_Y29_N2  ; 17      ; Latch enable ; no     ; --                   ; --               ; --                        ;
 ; RST                                                    ; PIN_M23            ; 33      ; Async. clear ; no     ; --                   ; --               ; --                        ;
 +--------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
@@ -1470,25 +1469,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                   ; Location           ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------------------------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; CLK                                                    ; PIN_Y2             ; 27      ; 10                                   ; Global Clock         ; GCLK4            ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[21][0]~1  ; LCCOMB_X58_Y24_N28 ; 16      ; 0                                    ; Global Clock         ; GCLK18           ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[22][0]~8  ; LCCOMB_X59_Y29_N14 ; 16      ; 0                                    ; Global Clock         ; GCLK9            ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[23][0]~2  ; LCCOMB_X59_Y29_N28 ; 16      ; 0                                    ; Global Clock         ; GCLK8            ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[24][0]~6  ; LCCOMB_X60_Y28_N28 ; 16      ; 0                                    ; Global Clock         ; GCLK11           ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[25][0]~11 ; LCCOMB_X60_Y28_N22 ; 16      ; 0                                    ; Global Clock         ; GCLK10           ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[26][0]~5  ; LCCOMB_X59_Y27_N2  ; 16      ; 0                                    ; Global Clock         ; GCLK19           ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[27][0]~10 ; LCCOMB_X59_Y27_N10 ; 16      ; 0                                    ; Global Clock         ; GCLK14           ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[28][0]~4  ; LCCOMB_X58_Y24_N26 ; 16      ; 0                                    ; Global Clock         ; GCLK17           ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[29][0]~9  ; LCCOMB_X59_Y19_N24 ; 16      ; 0                                    ; Global Clock         ; GCLK16           ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[30][0]~7  ; LCCOMB_X59_Y29_N18 ; 16      ; 0                                    ; Global Clock         ; GCLK7            ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[31][0]~12 ; LCCOMB_X59_Y29_N2  ; 16      ; 0                                    ; Global Clock         ; GCLK6            ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[32][0]~23 ; LCCOMB_X57_Y31_N12 ; 16      ; 0                                    ; Global Clock         ; GCLK2            ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[33][0]~21 ; LCCOMB_X57_Y31_N0  ; 16      ; 0                                    ; Global Clock         ; GCLK1            ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[34][0]~15 ; LCCOMB_X56_Y29_N26 ; 16      ; 0                                    ; Global Clock         ; GCLK13           ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[35][0]~13 ; LCCOMB_X56_Y29_N18 ; 16      ; 0                                    ; Global Clock         ; GCLK12           ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[36][0]~19 ; LCCOMB_X57_Y28_N18 ; 16      ; 0                                    ; Global Clock         ; GCLK0            ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[37][0]~18 ; LCCOMB_X57_Y28_N8  ; 16      ; 0                                    ; Global Clock         ; GCLK3            ; --                        ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[38][0]~27 ; LCCOMB_X59_Y29_N8  ; 16      ; 0                                    ; Global Clock         ; GCLK5            ; --                        ;
-; CURRENT_FASE.f_1                                       ; FF_X60_Y21_N9      ; 48      ; 0                                    ; Global Clock         ; GCLK15           ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[21][0]~1  ; LCCOMB_X60_Y29_N8  ; 16      ; 0                                    ; Global Clock         ; GCLK17           ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[22][0]~8  ; LCCOMB_X60_Y29_N18 ; 16      ; 0                                    ; Global Clock         ; GCLK11           ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[23][0]~2  ; LCCOMB_X60_Y29_N6  ; 16      ; 0                                    ; Global Clock         ; GCLK6            ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[24][0]~6  ; LCCOMB_X57_Y28_N12 ; 16      ; 0                                    ; Global Clock         ; GCLK16           ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[25][0]~11 ; LCCOMB_X57_Y28_N8  ; 16      ; 0                                    ; Global Clock         ; GCLK2            ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[26][0]~5  ; LCCOMB_X60_Y29_N10 ; 16      ; 0                                    ; Global Clock         ; GCLK8            ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[27][0]~10 ; LCCOMB_X60_Y29_N22 ; 16      ; 0                                    ; Global Clock         ; GCLK13           ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[28][0]~4  ; LCCOMB_X60_Y29_N28 ; 16      ; 0                                    ; Global Clock         ; GCLK9            ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[29][0]~9  ; LCCOMB_X60_Y29_N24 ; 16      ; 0                                    ; Global Clock         ; GCLK18           ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[30][0]~7  ; LCCOMB_X60_Y29_N2  ; 16      ; 0                                    ; Global Clock         ; GCLK15           ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[31][0]~12 ; LCCOMB_X60_Y29_N14 ; 16      ; 0                                    ; Global Clock         ; GCLK7            ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[32][0]~23 ; LCCOMB_X57_Y28_N16 ; 16      ; 0                                    ; Global Clock         ; GCLK0            ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[33][0]~21 ; LCCOMB_X57_Y28_N10 ; 16      ; 0                                    ; Global Clock         ; GCLK19           ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[34][0]~15 ; LCCOMB_X54_Y29_N28 ; 16      ; 0                                    ; Global Clock         ; GCLK14           ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[35][0]~13 ; LCCOMB_X54_Y29_N4  ; 16      ; 0                                    ; Global Clock         ; GCLK10           ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[36][0]~19 ; LCCOMB_X53_Y32_N24 ; 16      ; 0                                    ; Global Clock         ; GCLK3            ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[37][0]~18 ; LCCOMB_X53_Y32_N8  ; 16      ; 0                                    ; Global Clock         ; GCLK1            ; --                        ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[38][0]~27 ; LCCOMB_X56_Y33_N12 ; 16      ; 0                                    ; Global Clock         ; GCLK12           ; --                        ;
+; CURRENT_FASE.f_1                                       ; FF_X66_Y30_N13     ; 48      ; 0                                    ; Global Clock         ; GCLK5            ; --                        ;
 +--------------------------------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1497,45 +1496,45 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 4,196 / 342,891 ( 1 % ) ;
-; C16 interconnects     ; 417 / 10,120 ( 4 % )    ;
-; C4 interconnects      ; 4,314 / 209,544 ( 2 % ) ;
-; Direct links          ; 370 / 342,891 ( < 1 % ) ;
+; Block interconnects   ; 3,739 / 342,891 ( 1 % ) ;
+; C16 interconnects     ; 298 / 10,120 ( 3 % )    ;
+; C4 interconnects      ; 3,078 / 209,544 ( 1 % ) ;
+; Direct links          ; 354 / 342,891 ( < 1 % ) ;
 ; Global clocks         ; 20 / 20 ( 100 % )       ;
-; Local interconnects   ; 1,511 / 119,088 ( 1 % ) ;
-; R24 interconnects     ; 400 / 9,963 ( 4 % )     ;
-; R4 interconnects      ; 4,798 / 289,782 ( 2 % ) ;
+; Local interconnects   ; 1,663 / 119,088 ( 1 % ) ;
+; R24 interconnects     ; 213 / 9,963 ( 2 % )     ;
+; R4 interconnects      ; 3,153 / 289,782 ( 1 % ) ;
 +-----------------------+-------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                          ;
 +---------------------------------------------+-------------------------------+
-; Number of Logic Elements  (Average = 12.27) ; Number of LABs  (Total = 181) ;
+; Number of Logic Elements  (Average = 12.76) ; Number of LABs  (Total = 174) ;
 +---------------------------------------------+-------------------------------+
-; 1                                           ; 15                            ;
+; 1                                           ; 13                            ;
 ; 2                                           ; 5                             ;
-; 3                                           ; 10                            ;
-; 4                                           ; 4                             ;
-; 5                                           ; 4                             ;
-; 6                                           ; 3                             ;
-; 7                                           ; 2                             ;
-; 8                                           ; 1                             ;
-; 9                                           ; 1                             ;
+; 3                                           ; 2                             ;
+; 4                                           ; 7                             ;
+; 5                                           ; 2                             ;
+; 6                                           ; 1                             ;
+; 7                                           ; 1                             ;
+; 8                                           ; 2                             ;
+; 9                                           ; 4                             ;
 ; 10                                          ; 3                             ;
-; 11                                          ; 4                             ;
-; 12                                          ; 3                             ;
-; 13                                          ; 5                             ;
-; 14                                          ; 10                            ;
-; 15                                          ; 10                            ;
-; 16                                          ; 101                           ;
+; 11                                          ; 1                             ;
+; 12                                          ; 6                             ;
+; 13                                          ; 7                             ;
+; 14                                          ; 11                            ;
+; 15                                          ; 14                            ;
+; 16                                          ; 95                            ;
 +---------------------------------------------+-------------------------------+
 
 
 +--------------------------------------------------------------------+
 ; LAB-wide Signals                                                   ;
 +------------------------------------+-------------------------------+
-; LAB-wide Signals  (Average = 0.06) ; Number of LABs  (Total = 181) ;
+; LAB-wide Signals  (Average = 0.06) ; Number of LABs  (Total = 174) ;
 +------------------------------------+-------------------------------+
 ; 1 Async. clear                     ; 5                             ;
 ; 1 Clock                            ; 5                             ;
@@ -1545,103 +1544,105 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Signals Sourced  (Average = 12.45) ; Number of LABs  (Total = 181) ;
+; Number of Signals Sourced  (Average = 12.95) ; Number of LABs  (Total = 174) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
-; 1                                            ; 15                            ;
+; 1                                            ; 13                            ;
 ; 2                                            ; 5                             ;
-; 3                                            ; 10                            ;
-; 4                                            ; 4                             ;
-; 5                                            ; 4                             ;
-; 6                                            ; 3                             ;
-; 7                                            ; 2                             ;
-; 8                                            ; 1                             ;
-; 9                                            ; 1                             ;
+; 3                                            ; 2                             ;
+; 4                                            ; 7                             ;
+; 5                                            ; 2                             ;
+; 6                                            ; 1                             ;
+; 7                                            ; 1                             ;
+; 8                                            ; 2                             ;
+; 9                                            ; 4                             ;
 ; 10                                           ; 3                             ;
-; 11                                           ; 4                             ;
-; 12                                           ; 3                             ;
-; 13                                           ; 4                             ;
-; 14                                           ; 9                             ;
-; 15                                           ; 10                            ;
-; 16                                           ; 98                            ;
-; 17                                           ; 0                             ;
-; 18                                           ; 3                             ;
+; 11                                           ; 1                             ;
+; 12                                           ; 6                             ;
+; 13                                           ; 7                             ;
+; 14                                           ; 10                            ;
+; 15                                           ; 14                            ;
+; 16                                           ; 91                            ;
+; 17                                           ; 2                             ;
+; 18                                           ; 0                             ;
 ; 19                                           ; 0                             ;
-; 20                                           ; 0                             ;
+; 20                                           ; 1                             ;
 ; 21                                           ; 0                             ;
 ; 22                                           ; 0                             ;
 ; 23                                           ; 0                             ;
 ; 24                                           ; 0                             ;
 ; 25                                           ; 0                             ;
-; 26                                           ; 1                             ;
+; 26                                           ; 0                             ;
 ; 27                                           ; 0                             ;
 ; 28                                           ; 1                             ;
+; 29                                           ; 1                             ;
 +----------------------------------------------+-------------------------------+
 
 
 +---------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                         ;
 +-------------------------------------------------+-------------------------------+
-; Number of Signals Sourced Out  (Average = 4.91) ; Number of LABs  (Total = 181) ;
+; Number of Signals Sourced Out  (Average = 5.29) ; Number of LABs  (Total = 174) ;
 +-------------------------------------------------+-------------------------------+
 ; 0                                               ; 1                             ;
-; 1                                               ; 26                            ;
-; 2                                               ; 22                            ;
-; 3                                               ; 30                            ;
-; 4                                               ; 26                            ;
-; 5                                               ; 13                            ;
-; 6                                               ; 19                            ;
-; 7                                               ; 15                            ;
-; 8                                               ; 4                             ;
-; 9                                               ; 3                             ;
-; 10                                              ; 7                             ;
-; 11                                              ; 2                             ;
-; 12                                              ; 1                             ;
+; 1                                               ; 22                            ;
+; 2                                               ; 25                            ;
+; 3                                               ; 23                            ;
+; 4                                               ; 20                            ;
+; 5                                               ; 16                            ;
+; 6                                               ; 15                            ;
+; 7                                               ; 12                            ;
+; 8                                               ; 7                             ;
+; 9                                               ; 8                             ;
+; 10                                              ; 5                             ;
+; 11                                              ; 4                             ;
+; 12                                              ; 4                             ;
 ; 13                                              ; 3                             ;
-; 14                                              ; 1                             ;
-; 15                                              ; 4                             ;
-; 16                                              ; 4                             ;
+; 14                                              ; 3                             ;
+; 15                                              ; 3                             ;
+; 16                                              ; 2                             ;
+; 17                                              ; 1                             ;
 +-------------------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Distinct Inputs  (Average = 14.64) ; Number of LABs  (Total = 181) ;
+; Number of Distinct Inputs  (Average = 15.39) ; Number of LABs  (Total = 174) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
 ; 1                                            ; 0                             ;
-; 2                                            ; 15                            ;
-; 3                                            ; 4                             ;
-; 4                                            ; 7                             ;
-; 5                                            ; 5                             ;
-; 6                                            ; 4                             ;
-; 7                                            ; 7                             ;
-; 8                                            ; 4                             ;
+; 2                                            ; 14                            ;
+; 3                                            ; 3                             ;
+; 4                                            ; 3                             ;
+; 5                                            ; 4                             ;
+; 6                                            ; 5                             ;
+; 7                                            ; 4                             ;
+; 8                                            ; 5                             ;
 ; 9                                            ; 2                             ;
-; 10                                           ; 4                             ;
-; 11                                           ; 13                            ;
-; 12                                           ; 5                             ;
-; 13                                           ; 5                             ;
-; 14                                           ; 15                            ;
-; 15                                           ; 12                            ;
-; 16                                           ; 6                             ;
+; 10                                           ; 3                             ;
+; 11                                           ; 8                             ;
+; 12                                           ; 10                            ;
+; 13                                           ; 7                             ;
+; 14                                           ; 7                             ;
+; 15                                           ; 9                             ;
+; 16                                           ; 13                            ;
 ; 17                                           ; 10                            ;
 ; 18                                           ; 10                            ;
-; 19                                           ; 5                             ;
+; 19                                           ; 7                             ;
 ; 20                                           ; 5                             ;
-; 21                                           ; 7                             ;
-; 22                                           ; 3                             ;
-; 23                                           ; 6                             ;
-; 24                                           ; 2                             ;
-; 25                                           ; 5                             ;
-; 26                                           ; 2                             ;
-; 27                                           ; 7                             ;
-; 28                                           ; 5                             ;
+; 21                                           ; 9                             ;
+; 22                                           ; 5                             ;
+; 23                                           ; 4                             ;
+; 24                                           ; 1                             ;
+; 25                                           ; 6                             ;
+; 26                                           ; 4                             ;
+; 27                                           ; 5                             ;
+; 28                                           ; 2                             ;
 ; 29                                           ; 1                             ;
-; 30                                           ; 1                             ;
+; 30                                           ; 3                             ;
 ; 31                                           ; 1                             ;
-; 32                                           ; 2                             ;
+; 32                                           ; 3                             ;
 ; 33                                           ; 1                             ;
 +----------------------------------------------+-------------------------------+
 
@@ -1791,30 +1792,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary                                                                                                                                                                                                                                                                                                               ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
-; Source Clock(s)                                                                                                                                                                            ; Destination Clock(s)                                                                                                                       ; Delay Added in ns ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
-; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0],CURRENT_FASE.f_reset,CURRENT_FASE.f_2                                                                                                    ; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0],CURRENT_FASE.f_reset                                                                     ; 3710.7            ;
-; CLOCK_DIV:CLK_1|SLOW_COUNT[26],CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0],CURRENT_FASE.f_reset,CURRENT_FASE.f_2                                                                     ; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0],CURRENT_FASE.f_reset                                                                     ; 942.9             ;
-; CURRENT_FASE.f_reset,CURRENT_FASE.f_2                                                                                                                                                      ; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0],CURRENT_FASE.f_reset,CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector18~0,CURRENT_FASE.f_2 ; 699.8             ;
-; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0],CURRENT_FASE.f_reset                                                                                                                     ; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0],CURRENT_FASE.f_reset,CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector18~0,CURRENT_FASE.f_2 ; 311.9             ;
-; CLOCK_DIV:CLK_1|SLOW_COUNT[26],CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0],CURRENT_FASE.f_reset                                                                                      ; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0],CURRENT_FASE.f_reset,CURRENT_FASE.f_1                                                    ; 129.9             ;
-; CLOCK_DIV:CLK_1|SLOW_COUNT[26]                                                                                                                                                             ; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0],CURRENT_FASE.f_reset,CURRENT_FASE.f_1                                                    ; 124.6             ;
-; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0],CURRENT_FASE.f_reset,CURRENT_FASE.f_2                                                                                                    ; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0],CURRENT_FASE.f_reset,CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector18~0,CURRENT_FASE.f_2 ; 103.5             ;
-; CURRENT_FASE.f_reset,CURRENT_FASE.f_2                                                                                                                                                      ; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0],CURRENT_FASE.f_reset,CURRENT_FASE.f_2                                                    ; 83.6              ;
-; CLOCK_DIV:CLK_1|SLOW_COUNT[26]                                                                                                                                                             ; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0],CURRENT_FASE.f_reset,CURRENT_FASE.f_2                                                    ; 83.1              ;
-; CLOCK_DIV:CLK_1|SLOW_COUNT[26],CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0],CURRENT_FASE.f_reset                                                                                      ; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0],CURRENT_FASE.f_reset                                                                     ; 77.8              ;
-; CLOCK_DIV:CLK_1|SLOW_COUNT[26],CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0],CURRENT_FASE.f_reset,CURRENT_FASE.f_2                                                                     ; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0],CURRENT_FASE.f_reset,CURRENT_FASE.f_1                                                    ; 69.1              ;
-; CLOCK_DIV:CLK_1|SLOW_COUNT[26],CURRENT_FASE.f_reset,CURRENT_FASE.f_1                                                                                                                       ; CURRENT_FASE.f_reset,CURRENT_FASE.f_2                                                                                                      ; 47.6              ;
-; CLOCK_DIV:CLK_1|SLOW_COUNT[26]                                                                                                                                                             ; CURRENT_FASE.f_reset,CURRENT_FASE.f_2                                                                                                      ; 47.5              ;
-; CLOCK_DIV:CLK_1|SLOW_COUNT[26],CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0],CURRENT_FASE.f_reset,CURRENT_FASE.f_1,CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector18~0,CURRENT_FASE.f_2 ; CURRENT_FASE.f_1                                                                                                                           ; 46.1              ;
-; CLOCK_DIV:CLK_1|SLOW_COUNT[26],CURRENT_FASE.f_reset,CURRENT_FASE.f_1                                                                                                                       ; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0],CURRENT_FASE.f_reset,CURRENT_FASE.f_2                                                    ; 42.8              ;
-; CLOCK_DIV:CLK_1|SLOW_COUNT[26]                                                                                                                                                             ; CURRENT_FASE.f_reset                                                                                                                       ; 42.4              ;
-; CLOCK_DIV:CLK_1|SLOW_COUNT[26],CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0],CURRENT_FASE.f_reset,CURRENT_FASE.f_1,CURRENT_FASE.f_2                                                    ; CURRENT_FASE.f_1                                                                                                                           ; 37.5              ;
-; CLOCK_DIV:CLK_1|SLOW_COUNT[26]                                                                                                                                                             ; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0],CURRENT_FASE.f_reset                                                                     ; 36.5              ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary                                                                                                                                                                                          ;
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-------------------+
+; Source Clock(s)                                                                                                                                           ; Destination Clock(s)                                   ; Delay Added in ns ;
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-------------------+
+; CURRENT_FASE.f_reset,CURRENT_FASE.f_2                                                                                                                     ; CURRENT_FASE.f_reset                                   ; 2130.1            ;
+; CLOCK_DIV:CLK_1|SLOW_COUNT[26],CURRENT_FASE.f_reset,CURRENT_FASE.f_2                                                                                      ; CURRENT_FASE.f_reset                                   ; 380.7             ;
+; CLOCK_DIV:CLK_1|SLOW_COUNT[26]                                                                                                                            ; CURRENT_FASE.f_4,CURRENT_FASE.f_reset,CURRENT_FASE.f_1 ; 80.3              ;
+; CLOCK_DIV:CLK_1|SLOW_COUNT[26],CURRENT_FASE.f_4,CURRENT_FASE.f_reset,CURRENT_FASE.f_1,CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector15~0,CURRENT_FASE.f_2 ; CURRENT_FASE.f_1                                       ; 54.9              ;
+; CLOCK_DIV:CLK_1|SLOW_COUNT[26],CURRENT_FASE.f_4,CURRENT_FASE.f_reset                                                                                      ; CURRENT_FASE.f_4,CURRENT_FASE.f_reset,CURRENT_FASE.f_1 ; 54.4              ;
+; CLOCK_DIV:CLK_1|SLOW_COUNT[26],CURRENT_FASE.f_4,CURRENT_FASE.f_reset,CURRENT_FASE.f_1,CURRENT_FASE.f_2                                                    ; CURRENT_FASE.f_1                                       ; 48.0              ;
+; CLOCK_DIV:CLK_1|SLOW_COUNT[26]                                                                                                                            ; CURRENT_FASE.f_reset,CURRENT_FASE.f_2                  ; 44.0              ;
+; CLOCK_DIV:CLK_1|SLOW_COUNT[26],CURRENT_FASE.f_4,CURRENT_FASE.f_reset                                                                                      ; CURRENT_FASE.f_reset,CURRENT_FASE.f_1                  ; 38.4              ;
+; CLOCK_DIV:CLK_1|SLOW_COUNT[26],CURRENT_FASE.f_4,CURRENT_FASE.f_reset,CURRENT_FASE.f_2                                                                     ; CURRENT_FASE.f_4,CURRENT_FASE.f_reset,CURRENT_FASE.f_1 ; 37.4              ;
+; CLOCK_DIV:CLK_1|SLOW_COUNT[26],CURRENT_FASE.f_reset,CURRENT_FASE.f_1                                                                                      ; CURRENT_FASE.f_reset,CURRENT_FASE.f_2                  ; 35.0              ;
+; CLOCK_DIV:CLK_1|SLOW_COUNT[26]                                                                                                                            ; CURRENT_FASE.f_reset                                   ; 20.2              ;
+; CLOCK_DIV:CLK_1|SLOW_COUNT[26]                                                                                                                            ; CURRENT_FASE.f_reset,CURRENT_FASE.f_1                  ; 18.5              ;
+; CURRENT_FASE.f_reset                                                                                                                                      ; CURRENT_FASE.f_4,CURRENT_FASE.f_reset,CURRENT_FASE.f_1 ; 14.5              ;
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
 
@@ -1824,106 +1820,106 @@ This will disable optimization of problematic paths and expose them for further 
 +--------------------------------------------------------+------------------------------------------------------+-------------------+
 ; Source Register                                        ; Destination Register                                 ; Delay Added in ns ;
 +--------------------------------------------------------+------------------------------------------------------+-------------------+
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[8]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[32][8]  ; 11.023            ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[12]            ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[32][12] ; 11.022            ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[0]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[32][0]  ; 10.893            ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[14]            ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[36][14] ; 10.853            ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[1]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[23][1]  ; 10.646            ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[4]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[24][4]  ; 10.643            ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[6]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[36][6]  ; 10.623            ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[10]            ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[32][10] ; 10.601            ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[2]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[32][2]  ; 10.518            ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[15]            ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[32][15] ; 10.483            ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[7]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[32][7]  ; 10.474            ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[11]            ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[32][11] ; 10.289            ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[3]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[32][3]  ; 10.222            ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[5]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[24][5]  ; 10.199            ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[9]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[32][9]  ; 10.196            ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[13]            ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[33][13] ; 10.170            ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_EXT3[2]        ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[2]           ; 7.891             ;
-; CURRENT_FASE.f_2                                       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[2]           ; 7.891             ;
-; CURRENT_FASE.f_3                                       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[2]           ; 7.891             ;
-; CURRENT_FASE.f_1                                       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[4]      ; 6.744             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|REM1[3]            ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[9]           ; 5.845             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_EXT3[1]        ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[1]           ; 5.748             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_EXT3[0]        ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[0]           ; 5.682             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|REM1[5]            ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[2]           ; 5.609             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_EXT3[3]        ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[3]           ; 5.603             ;
-; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[3]      ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[1]      ; 5.554             ;
-; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT2[3]      ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[1]      ; 5.554             ;
-; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT2[0]      ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[1]      ; 5.554             ;
-; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0]      ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[1]      ; 5.554             ;
-; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[1]      ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[1]      ; 5.554             ;
-; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT2[1]      ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[1]      ; 5.554             ;
-; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[2]      ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[1]      ; 5.554             ;
-; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT2[2]      ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[1]      ; 5.554             ;
-; CURRENT_FASE.f_reset                                   ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[1]      ; 5.554             ;
-; CURRENT_FASE.f_4                                       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[1]      ; 5.554             ;
-; CURRENT_FASE.f_5                                       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[1]      ; 5.554             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_EXT3[7]        ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[7]           ; 5.523             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_EXT3[5]        ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[5]           ; 5.495             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_EXT3[9]        ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[9]           ; 5.409             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_EXT3[4]        ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[4]           ; 5.302             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_EXT3[8]        ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[8]           ; 5.238             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|REM1[4]            ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[6]           ; 5.197             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|REM1[1]            ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[9]           ; 5.179             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_EXT3[13]       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[13]          ; 5.152             ;
-; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT2[4]      ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[1]      ; 5.151             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_EXT3[15]       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[15]          ; 5.079             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[19][3]    ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[3]           ; 5.038             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_EXT3[14]       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[14]          ; 5.015             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_EXT3[11]       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[11]          ; 4.979             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_EXT3[6]        ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[6]           ; 4.907             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_EXT3[10]       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[10]          ; 4.903             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_EXT3[12]       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[12]          ; 4.866             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|REM1[0]            ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[13]          ; 4.826             ;
-; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT2[9]      ; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT2[9]    ; 4.709             ;
-; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT2[8]      ; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT2[9]    ; 4.709             ;
-; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT2[7]      ; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT2[9]    ; 4.709             ;
-; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT2[6]      ; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT2[9]    ; 4.709             ;
-; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT2[5]      ; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT2[9]    ; 4.709             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[7][6]     ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[6]           ; 4.652             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[17][3]    ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[3]           ; 4.621             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[17][1]    ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[1]           ; 4.587             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[14][3]    ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[3]           ; 4.549             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[13][5]    ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[5]           ; 4.548             ;
-; CLOCK_DIV:CLK_1|SLOW_COUNT[26]                         ; CLOCK_DIV:CLK_1|SLOW_COUNT[26]                       ; 4.542             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[19][10]   ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[10]          ; 4.512             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[19][1]    ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[1]           ; 4.424             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PC[1]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[1]      ; 4.416             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|REM1[2]            ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[4]           ; 4.403             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[18][10]   ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[10]          ; 4.388             ;
-; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector31~2     ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2[8]      ; 4.380             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[10][3]    ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[3]           ; 4.379             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[17][10]   ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[10]          ; 4.361             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|\process_0:ACC[12] ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[12]     ; 4.334             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[8][6]     ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[6]           ; 4.296             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PC[7]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[7]      ; 4.285             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|\process_0:ACC[7]  ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[7]      ; 4.237             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PC[3]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[3]      ; 4.232             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[11][5]    ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[5]           ; 4.219             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|\process_0:ACC[4]  ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[4]      ; 4.209             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[6][6]     ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[6]           ; 4.192             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PC[12]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[12]     ; 4.190             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[5][12]    ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[12]          ; 4.183             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[10][13]   ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[13]          ; 4.167             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[19][7]    ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[7]           ; 4.135             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|\process_0:ACC[1]  ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[1]      ; 4.127             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[15][9]    ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[9]           ; 4.126             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[15][5]    ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[5]           ; 4.118             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[17][7]    ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[7]           ; 4.107             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PC[0]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[0]      ; 4.099             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[17][2]    ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[2]           ; 4.081             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PC[4]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[4]      ; 4.077             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[13][6]    ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[6]           ; 4.064             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[7][12]    ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[12]          ; 4.060             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[20][15]   ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[15]          ; 4.053             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[13][9]    ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[9]           ; 4.034             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[19][4]    ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[4]           ; 4.031             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[15][3]    ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[3]           ; 4.031             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[12][3]    ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[3]           ; 4.017             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[7][5]     ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[5]           ; 4.006             ;
-; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[16][11]   ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[11]          ; 4.005             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[3]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[36][3]  ; 8.158             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[12]            ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[36][12] ; 7.441             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[6]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[36][6]  ; 7.340             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[2]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[37][2]  ; 7.237             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[13]            ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[25][13] ; 7.229             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[0]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[37][0]  ; 7.215             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[14]            ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[36][14] ; 7.167             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[1]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[25][1]  ; 7.124             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[5]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[25][5]  ; 7.056             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[4]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[36][4]  ; 7.007             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[7]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[37][7]  ; 6.991             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[8]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[36][8]  ; 6.833             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[10]            ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[36][10] ; 6.782             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[15]            ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[36][15] ; 6.772             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[9]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[23][9]  ; 6.603             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[11]            ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[36][11] ; 6.560             ;
+; CURRENT_FASE.f_1                                       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[4]      ; 4.944             ;
+; CLOCK_DIV:CLK_1|SLOW_COUNT[26]                         ; CLOCK_DIV:CLK_1|SLOW_COUNT[26]                       ; 4.557             ;
+; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[3]      ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[12] ; 3.983             ;
+; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT2[3]      ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[12] ; 3.983             ;
+; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT2[0]      ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[12] ; 3.983             ;
+; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[0]      ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[12] ; 3.983             ;
+; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[1]      ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[12] ; 3.983             ;
+; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT2[1]      ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[12] ; 3.983             ;
+; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT1[2]      ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[12] ; 3.983             ;
+; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT2[2]      ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[12] ; 3.983             ;
+; CURRENT_FASE.f_reset                                   ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[12] ; 3.983             ;
+; CURRENT_FASE.f_4                                       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[12] ; 3.983             ;
+; CURRENT_FASE.f_5                                       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[12] ; 3.983             ;
+; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|BUS_INT2[4]      ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[12] ; 3.882             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PC[12]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[12] ; 3.611             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2[9]        ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[9]  ; 3.539             ;
+; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector26~1     ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[11] ; 3.522             ;
+; CONTROLADOR_MICRO:CONTROLADOR_MICRO_1|Selector28~2     ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[11] ; 3.522             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|R1[9]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[9]  ; 3.438             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|R1[7]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[7]  ; 3.431             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2[14]       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[14] ; 3.406             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|R1[12]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[12] ; 3.404             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_EXT3[4]        ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[4]           ; 3.376             ;
+; CURRENT_FASE.f_2                                       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[4]           ; 3.376             ;
+; CURRENT_FASE.f_3                                       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|RDM[4]           ; 3.376             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|R1[11]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[11] ; 3.358             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PC[1]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[1]  ; 3.313             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PC[13]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[13] ; 3.304             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|IR[13]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[9]  ; 3.258             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|\process_0:ACC[12] ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[12] ; 3.238             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2[13]       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[13] ; 3.186             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|R1[4]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[4]      ; 3.184             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|IR[11]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[7]  ; 3.183             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2[7]        ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[7]  ; 3.183             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2[12]       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[12] ; 3.182             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|\process_0:ACC[14] ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[14] ; 3.150             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|\process_0:ACC[1]  ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[1]  ; 3.150             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[12]       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[12] ; 3.135             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[14]       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[14] ; 3.095             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2[11]       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[11] ; 3.048             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|\process_0:ACC[13] ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[13] ; 3.047             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|R1[6]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[6]      ; 3.043             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|IR[15]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[11] ; 3.031             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|R1[0]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[0]  ; 3.002             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PC[11]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[11] ; 2.984             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|\process_0:ACC[11] ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[11] ; 2.984             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[1]        ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[1]  ; 2.980             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|R1[1]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[1]  ; 2.980             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2[8]        ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[8]  ; 2.945             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2[4]        ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[4]  ; 2.903             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PC[10]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[10] ; 2.897             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[13]       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[13] ; 2.878             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[11]       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[11] ; 2.806             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|\process_0:ACC[10] ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[10] ; 2.776             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PC[3]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[3]  ; 2.758             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|\process_0:ACC[3]  ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[3]  ; 2.758             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|\process_0:ACC[6]  ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[6]      ; 2.749             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|R1[10]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[10]     ; 2.748             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PC[6]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[6]      ; 2.735             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|IR[8]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[4]  ; 2.733             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|\process_0:ACC[15] ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[15] ; 2.730             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PC[8]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[8]  ; 2.723             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|R1[8]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[8]  ; 2.704             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PC[9]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[9]  ; 2.696             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|\process_0:ACC[9]  ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[9]  ; 2.696             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2[15]       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[15] ; 2.689             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|R1[5]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[5]      ; 2.687             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PC[0]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[0]  ; 2.675             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|\process_0:ACC[5]  ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[5]      ; 2.668             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PC[4]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[4]  ; 2.666             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|IR[10]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[6]  ; 2.658             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|R1[3]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[3]  ; 2.657             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[3]        ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[3]  ; 2.657             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|IR[9]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[5]  ; 2.644             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|IR[12]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[8]  ; 2.624             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PC[5]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[5]      ; 2.623             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PC[2]              ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[2]  ; 2.615             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2[10]       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA2_OUT[10] ; 2.612             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PC[15]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[15]     ; 2.603             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[15]       ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[15] ; 2.602             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|R1[15]             ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[15]     ; 2.583             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|\process_0:ACC[0]  ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[0]  ; 2.563             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[0]        ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[0]  ; 2.563             ;
+; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1[9]        ; CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|BUS_ULA1_OUT[9]  ; 2.555             ;
 +--------------------------------------------------------+------------------------------------------------------+-------------------+
 Note: This table only shows the top 100 path(s) that have the largest delay added for hold.
 
@@ -1958,139 +1954,118 @@ Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Ass
 Warning (335093): TimeQuest Timing Analyzer is analyzing 1022 combinational loops as latches. For more details, run the Check Timing command in the TimeQuest Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'microprocessor.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
-Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd Line: 35
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector36~0|combout"
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector36~0|dataa"
-Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd Line: 35
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector42~0|combout"
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector42~0|dataa"
-Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd Line: 35
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector41~0|combout"
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector41~0|dataa"
-Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd Line: 35
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector37~0|combout"
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector37~0|dataa"
-Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd Line: 35
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector45~0|combout"
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector45~0|dataa"
-Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd Line: 35
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector38~0|combout"
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector38~0|dataa"
-Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd Line: 35
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector20~1|combout"
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector20~1|datab"
-Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd Line: 35
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector44~0|combout"
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector44~0|dataa"
-Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd Line: 35
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector43~0|combout"
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector43~0|dataa"
-Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd Line: 35
+Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/output_files/controlador_micro.vhd Line: 35
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector33~0|combout"
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector33~0|dataa"
+Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/output_files/controlador_micro.vhd Line: 35
     Warning (332126): Node "CONTROLADOR_MICRO_1|Selector39~0|combout"
     Warning (332126): Node "CONTROLADOR_MICRO_1|Selector39~0|dataa"
-Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd Line: 35
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector13~2|combout"
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector13~2|datab"
-Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd Line: 35
+Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/output_files/controlador_micro.vhd Line: 35
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector38~0|combout"
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector38~0|dataa"
+Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/output_files/controlador_micro.vhd Line: 35
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector34~0|combout"
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector34~0|dataa"
+Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/output_files/controlador_micro.vhd Line: 35
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector42~0|combout"
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector42~0|dataa"
+Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/output_files/controlador_micro.vhd Line: 35
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector35~0|combout"
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector35~0|dataa"
+Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/output_files/controlador_micro.vhd Line: 35
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector17~1|combout"
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector17~1|datab"
+Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/output_files/controlador_micro.vhd Line: 35
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector41~0|combout"
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector41~0|dataa"
+Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/output_files/controlador_micro.vhd Line: 35
     Warning (332126): Node "CONTROLADOR_MICRO_1|Selector40~0|combout"
     Warning (332126): Node "CONTROLADOR_MICRO_1|Selector40~0|dataa"
-Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd Line: 35
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector12~0|combout"
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector12~0|datac"
-Warning (332125): Found combinational loop of 4 nodes File: C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd Line: 35
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector35~2|combout"
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector35~0|dataa"
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector35~0|combout"
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector35~2|dataa"
-Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd Line: 35
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector33~0|combout"
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector33~0|datab"
-Warning (332125): Found combinational loop of 4 nodes File: C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd Line: 35
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector34~1|combout"
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector34~0|dataa"
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector34~0|combout"
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector34~1|dataa"
-Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd Line: 35
+Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/output_files/controlador_micro.vhd Line: 35
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector36~0|combout"
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector36~0|dataa"
+Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/output_files/controlador_micro.vhd Line: 35
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector37~0|combout"
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector37~0|dataa"
+Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/output_files/controlador_micro.vhd Line: 35
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector10~2|combout"
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector10~2|datab"
+Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/output_files/controlador_micro.vhd Line: 35
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector9~0|combout"
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector9~0|datac"
+Warning (332125): Found combinational loop of 4 nodes File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/output_files/controlador_micro.vhd Line: 35
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector32~2|combout"
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector32~0|dataa"
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector32~0|combout"
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector32~2|dataa"
+Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/output_files/controlador_micro.vhd Line: 35
     Warning (332126): Node "CONTROLADOR_MICRO_1|Selector30~0|combout"
     Warning (332126): Node "CONTROLADOR_MICRO_1|Selector30~0|datab"
-Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/Microprocessor/output_files/controlador_micro.vhd Line: 35
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector32~0|combout"
-    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector32~0|datab"
-Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): Cell: CONTROLADOR_MICRO_1|Add0~0  from: datab  to: combout
-    Info (332098): Cell: CONTROLADOR_MICRO_1|Add0~2  from: cin  to: combout
-    Info (332098): Cell: CONTROLADOR_MICRO_1|Add0~4  from: cin  to: combout
-    Info (332098): Cell: CONTROLADOR_MICRO_1|Add0~6  from: cin  to: combout
-    Info (332098): Cell: CONTROLADOR_MICRO_1|Add0~8  from: cin  to: combout
-    Info (332098): Cell: CONTROLADOR_MICRO_1|Mux25~0  from: dataa  to: combout
-    Info (332098): Cell: CONTROLADOR_MICRO_1|Mux25~0  from: datab  to: combout
-    Info (332098): Cell: CONTROLADOR_MICRO_1|Mux25~0  from: datac  to: combout
-    Info (332098): Cell: CONTROLADOR_MICRO_1|Mux26~0  from: dataa  to: combout
-    Info (332098): Cell: CONTROLADOR_MICRO_1|Mux26~0  from: datab  to: combout
-    Info (332098): Cell: CONTROLADOR_MICRO_1|Mux26~0  from: datac  to: combout
-    Info (332098): Cell: CONTROLADOR_MICRO_1|Mux26~0  from: datad  to: combout
-    Info (332098): Cell: CONTROLADOR_MICRO_1|Mux4~0  from: datab  to: combout
-    Info (332098): Cell: CONTROLADOR_MICRO_1|Mux4~0  from: datac  to: combout
-    Info (332098): Cell: CONTROLADOR_MICRO_1|Selector13~1  from: datab  to: combout
-    Info (332098): Cell: CONTROLADOR_MICRO_1|Selector13~1  from: datad  to: combout
-    Info (332098): Cell: CONTROLADOR_MICRO_1|Selector20~0  from: datab  to: combout
-    Info (332098): Cell: CONTROLADOR_MICRO_1|Selector20~0  from: datac  to: combout
-    Info (332098): Cell: CONTROLADOR_MICRO_1|Selector5~0  from: datab  to: combout
-    Info (332098): Cell: CONTROLADOR_MICRO_1|Selector5~0  from: datac  to: combout
+Warning (332125): Found combinational loop of 4 nodes File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/output_files/controlador_micro.vhd Line: 35
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector31~1|combout"
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector31~0|dataa"
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector31~0|combout"
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector31~1|dataa"
+Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/output_files/controlador_micro.vhd Line: 35
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector27~0|combout"
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector27~0|datab"
+Warning (332125): Found combinational loop of 2 nodes File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/output_files/controlador_micro.vhd Line: 35
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector29~0|combout"
+    Warning (332126): Node "CONTROLADOR_MICRO_1|Selector29~0|datab"
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node CLK~input (placed in PIN Y2 (CLK2, DIFFCLK_1p)) File: C:/altera_lite/16.0/Projetos/Microprocessor/microprocessor.vhd Line: 9
+Info (176353): Automatically promoted node CLK~input (placed in PIN Y2 (CLK2, DIFFCLK_1p)) File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/microprocessor.vhd Line: 9
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
-Info (176353): Automatically promoted node CURRENT_FASE.f_1  File: C:/altera_lite/16.0/Projetos/Microprocessor/microprocessor.vhd Line: 24
+Info (176353): Automatically promoted node CURRENT_FASE.f_1  File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/microprocessor.vhd Line: 24
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node DISPLAY_SEGS:DISPLAY_SEGS_1|display_segs6[0]~0 File: C:/altera_lite/16.0/Projetos/Microprocessor/display_segs.vhd Line: 13
-        Info (176357): Destination node CURRENT_FASE.f_2 File: C:/altera_lite/16.0/Projetos/Microprocessor/microprocessor.vhd Line: 24
-        Info (176357): Destination node DISPLAY_SEGS:DISPLAY_SEGS_1|display_segs6[5]~1 File: C:/altera_lite/16.0/Projetos/Microprocessor/display_segs.vhd Line: 13
-        Info (176357): Destination node DISPLAY_SEGS:DISPLAY_SEGS_1|display_segs6[4]~5 File: C:/altera_lite/16.0/Projetos/Microprocessor/display_segs.vhd Line: 13
-        Info (176357): Destination node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector38~1 File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 44
-        Info (176357): Destination node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector35~1 File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 44
-        Info (176357): Destination node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector13~1 File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 44
-        Info (176357): Destination node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector1~0 File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 44
-        Info (176357): Destination node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector37~1 File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 44
-        Info (176357): Destination node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector14~1 File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 44
+        Info (176357): Destination node DISPLAY_SEGS:DISPLAY_SEGS_1|display_segs6[0]~0 File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/display_segs.vhd Line: 13
+        Info (176357): Destination node CURRENT_FASE.f_2 File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/microprocessor.vhd Line: 24
+        Info (176357): Destination node DISPLAY_SEGS:DISPLAY_SEGS_1|display_segs6[5]~1 File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/display_segs.vhd Line: 13
+        Info (176357): Destination node DISPLAY_SEGS:DISPLAY_SEGS_1|display_segs6[4]~5 File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/display_segs.vhd Line: 13
+        Info (176357): Destination node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector38~1 File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 44
+        Info (176357): Destination node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector35~1 File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 44
+        Info (176357): Destination node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector13~1 File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 44
+        Info (176357): Destination node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector1~0 File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 44
+        Info (176357): Destination node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector37~1 File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 44
+        Info (176357): Destination node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|Selector14~1 File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 44
         Info (176358): Non-global destination nodes limited to 10 nodes
-Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[21][0]~1  File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 21
+Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[21][0]~1  File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 21
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[22][0]~8  File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 21
+Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[22][0]~8  File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 21
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[23][0]~2  File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 21
+Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[23][0]~2  File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 21
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[24][0]~6  File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 21
+Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[24][0]~6  File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 21
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[25][0]~11  File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 21
+Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[25][0]~11  File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 21
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[26][0]~5  File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 21
+Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[26][0]~5  File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 21
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[27][0]~10  File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 21
+Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[27][0]~10  File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 21
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[28][0]~4  File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 21
+Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[28][0]~4  File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 21
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[29][0]~9  File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 21
+Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[29][0]~9  File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 21
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[30][0]~7  File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 21
+Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[30][0]~7  File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 21
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[31][0]~12  File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 21
+Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[31][0]~12  File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 21
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[32][0]~23  File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 21
+Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[32][0]~23  File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 21
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[33][0]~21  File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 21
+Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[33][0]~21  File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 21
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[34][0]~15  File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 21
+Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[34][0]~15  File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 21
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[35][0]~13  File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 21
+Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[35][0]~13  File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 21
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[36][0]~19  File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 21
+Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[36][0]~19  File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 21
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[37][0]~18  File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 21
+Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[37][0]~18  File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 21
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[38][0]~27  File: C:/altera_lite/16.0/Projetos/Microprocessor/controlador_prin.vhd Line: 21
+Info (176353): Automatically promoted node CONTROLADOR_PRIN:CONTROLADOR_PRIN_1|PRIN_MEM[38][0]~27  File: C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/controlador_prin.vhd Line: 21
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -2102,35 +2077,35 @@ Warning (15705): Ignored locations or region assignments to the following nodes
 Info (171121): Fitter preparation operations ending: elapsed time is 00:00:06
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:05
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:04
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:27
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:42
 Info (170193): Fitter routing operations beginning
-Info (170089): 7e+03 ns of routing delay (approximately 2.7% of available device routing delay) has been added to meet hold timing. For more information, refer to the Estimated Delay Added for Hold Timing section in the Fitter report.
+Info (170089): 3e+03 ns of routing delay (approximately 1.2% of available device routing delay) has been added to meet hold timing. For more information, refer to the Estimated Delay Added for Hold Timing section in the Fitter report.
 Info (170195): Router estimated average interconnect usage is 1% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 25% of the available device resources in the region that extends from location X58_Y24 to location X68_Y36
+    Info (170196): Router estimated peak interconnect usage is 29% of the available device resources in the region that extends from location X58_Y24 to location X68_Y36
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:04:39
-Info (11888): Total time spent on timing analysis during the Fitter is 34.99 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:01:22
+Info (11888): Total time spent on timing analysis during the Fitter is 37.91 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:06
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:05
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
-Info (144001): Generated suppressed messages file C:/altera_lite/16.0/Projetos/Microprocessor/output_files/microprocessor.fit.smsg
+Info (144001): Generated suppressed messages file C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/output_files/microprocessor.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 68 warnings
-    Info: Peak virtual memory: 1541 megabytes
-    Info: Processing ended: Wed Nov 30 20:17:54 2016
-    Info: Elapsed time: 00:05:47
-    Info: Total CPU time (on all processors): 00:06:12
+    Info: Peak virtual memory: 1535 megabytes
+    Info: Processing ended: Thu Dec 01 12:16:08 2016
+    Info: Elapsed time: 00:02:48
+    Info: Total CPU time (on all processors): 00:03:29
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/altera_lite/16.0/Projetos/Microprocessor/output_files/microprocessor.fit.smsg.
+The suppressed messages can be found in C:/altera_lite/16.0/Projetos/fpga-16bit-microprogramavel-polifasico-master/output_files/microprocessor.fit.smsg.
 
 
