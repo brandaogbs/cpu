@@ -14,28 +14,27 @@ ENTITY MICROPROCESSOR IS
 END MICROPROCESSOR;
  
 -------------------------------
+
  
 ARCHITECTURE BEHAVIOR OF MICROPROCESSOR IS
 
 -- SINAIS
 
-	SIGNAL SLOW_CLOCK  					: 	STD_LOGIC; 
+	SIGNAL SLOW_CLOCK  					 : STD_LOGIC; 
 	
-	SIGNAL CURRENT_FASE					:	TYPE_FASE;
-	SIGNAL NEXT_FASE						:	TYPE_FASE;
+	SIGNAL IR, PC, ACC					 :	STD_LOGIC_VECTOR(15 DOWNTO 0);
 	
-	SIGNAL IR, PC, ACC					:	STD_LOGIC_VECTOR(15 DOWNTO 0);
+	SIGNAL MPC								 :	STD_LOGIC_VECTOR(9 DOWNTO 0);
 	
-	SIGNAL MPC								:	STD_LOGIC_VECTOR(9 DOWNTO 0);
-	
-	SIGNAL SC								:	STD_LOGIC_VECTOR(24 DOWNTO 1);
+	SIGNAL NEXT_FASE, CURRENT_FASE	 :	TYPE_FASE;
 
-	SIGNAL BUS_ULA1,BUS_ULA2,BUS_EXT3:	STD_LOGIC_VECTOR(15 DOWNTO 0);
+	SIGNAL BUS_ULA1,BUS_ULA2,BUS_EXT3 :	STD_LOGIC_VECTOR(15 DOWNTO 0);
 	
-	
+	SIGNAL SC								 : std_logic_vector(24 downto 1);
+
 BEGIN
 
- 
+	
 					
 -- COMPONENTS
 
@@ -44,44 +43,24 @@ BEGIN
 		
 		
 -- controlador micro
-		CONTROLADOR_MICRO_1	: CONTROLADOR_MICRO PORT MAP (CURRENT_FASE, IR, ACC, MPC, SC);
+--		CONTROLADOR_MICRO_1	: CONTROLADOR_MICRO PORT MAP (CURRENT_FASE, IR, ACC, MPC, SC);
 		
-		
--- controlador principal
-		CONTROLADOR_PRIN_1	: CONTROLADOR_PRIN PORT MAP(CURRENT_FASE, SC, PC,
-																		 BUS_ULA1,BUS_ULA2,BUS_EXT3,
-																		 IR, ACC);
-		
+
 -- display 7 segmentos
 		DISPLAY_SEGS_1			: DISPLAY_SEGS PORT MAP (CURRENT_FASE, PC, MPC, BUS_ULA1, BUS_ULA2, BUS_EXT3,
 																	 display_segs1, display_segs2, display_segs3,
 																	 display_segs4, display_segs5, display_segs6);
-
-
-																	 
--- 	Process p atualizar a fase atual com a nova fase, definido pela maquina (fase_change)
---		Atualiza em cada pulso de clock ou assincrona com reset
-fase_update:
-		process(slow_clock, rst)
-			
-		begin
-			
-			if (rst = '0') then
-			
-				current_fase <= f_reset;
-				
-			elsif (slow_clock'event and slow_clock = '1') then
-			
-				current_fase <= next_fase;
-				
-			end if;
-		end process;
  
+ 		
+-- controlador principal
+		CONTROLADOR_PRIN_1	: CONTROLADOR_PRIN PORT MAP(NEXT_FASE,RST, SLOW_CLOCK,
+									  CURRENT_FASE,PC,BUS_ULA1,BUS_ULA2,BUS_EXT3,MPC,SC);
+	
 
 
 -- 	Process para trocar as fase do microprogramado
 fase_change:
-		process (current_fase)	
+		process (current_fase, sc)	
 
 		begin
 			-- caso seja loop interno do microporograma

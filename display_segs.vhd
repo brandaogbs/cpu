@@ -39,6 +39,7 @@ ARCHITECTURE BEHAVIOR OF DISPLAY_SEGS IS
 								seg_nums(12) when BUS_EXT3   =	"0000000000001100" else
 								seg_nums(13) when BUS_EXT3   =	"0000000000001101" else
 								seg_nums(14) when BUS_EXT3   =	"0000000000001110" else
+								seg_nums(15) when BUS_EXT3   =	"0000000000001111" else
 								"1111110";		
 		
 		
@@ -57,6 +58,8 @@ ARCHITECTURE BEHAVIOR OF DISPLAY_SEGS IS
 								seg_nums(12) when BUS_ULA2   =	"0000000000001100"else
 								seg_nums(13) when BUS_ULA2   =	"0000000000001101" else
 								seg_nums(14) when BUS_ULA2   =	"0000000000001110" else
+								seg_nums(15) when BUS_ULA2   =	"0000000000001111" else
+								
 								"1111110";
 
 								
@@ -75,6 +78,7 @@ ARCHITECTURE BEHAVIOR OF DISPLAY_SEGS IS
 								seg_nums(12) when BUS_ULA1   =	 "0000000000001100"else
 								seg_nums(13) when BUS_ULA1   =	"0000000000001101" else
 								seg_nums(14) when BUS_ULA1   =	"0000000000001110" else
+								seg_nums(15) when BUS_ULA1   =	"0000000000001111" else
 								"1111110";
 					
 		display_segs4 <= 	seg_nums(0) when  MPC   =	"0000000000" else			
@@ -92,6 +96,7 @@ ARCHITECTURE BEHAVIOR OF DISPLAY_SEGS IS
 								seg_nums(12) when MPC   =	"0000001100" else
 								seg_nums(13) when MPC   =	"0000001101" else
 								seg_nums(14) when MPC   =	"0000001110" else
+								seg_nums(15) when MPC   =	"0000001111" else
 								"1111110";
 
 
