@@ -5,7 +5,8 @@ use ieee.numeric_std.all;
 USE WORK.MICRO_PACK.ALL;
 
 ENTITY CONTROLADOR_PRIN IS
-	PORT(NEXT_FASE							: IN 	TYPE_FASE;
+	PORT(clk									: in std_logic;
+		  NEXT_FASE							: IN 	TYPE_FASE;
 		  RST, SLOW_CLOCK					: IN 	STD_LOGIC;
 		  CURRENT_FASE_OUT				: OUT TYPE_FASE;
 		  PC_OUT								: OUT STD_LOGIC_VECTOR (15 DOWNTO 0);
@@ -20,11 +21,12 @@ ARCHITECTURE BEHAVIOR OF CONTROLADOR_PRIN IS
 	
 	
 	BEGIN
+
 	
 -- PROCESS FASE 1 a 3
-	PROCESS (SLOW_CLOCK, RST, NEXT_FASE)
+	PROCESS ( RST, slow_clock)
 	
-	 VARIABLE CURRENT_FASE: TYPE_FASE;		
+	 VARIABLE CURRENT_FASE: TYPE_FASE := f_reset;		
 	
 	 VARIABLE PRIN_MEM: MEM_ROM;	
 	
@@ -62,23 +64,12 @@ ARCHITECTURE BEHAVIOR OF CONTROLADOR_PRIN IS
 		-- 	Process p atualizar a fase atual com a nova fase, definido pela maquina (fase_change)
 		--		Atualiza em cada pulso de clock ou assincrona com reset
 	fase_update:
-	
-			if (rst = '0') then
-			
+
+			 
+	  if (rst = '0') then
+--		if(current_fase = f_reset) then
 				current_fase := f_reset;
-				
-			elsif (slow_clock'event and slow_clock = '1') then
-			
-				current_fase := next_fase;
-				
-			end if;
-			
-				CURRENT_FASE_OUT <= CURRENT_FASE;
 		
-		CASE CURRENT_FASE IS
-		
-			WHEN F_RESET =>
-				
 				 PRIN_MEM(0) := "0000000001000001";
              PRIN_MEM(1) := "0000000010010011";
 				 PRIN_MEM(2) := "0000000001000010";
@@ -155,11 +146,24 @@ ARCHITECTURE BEHAVIOR OF CONTROLADOR_PRIN IS
 				BUS_INT2	:= "0000000000";
 				BUS_INT3	:= "0000000000";
 				
+				CURRENT_FASE_OUT <= CURRENT_FASE;
+		
+	
+	 elsif (slow_clock'event and slow_clock = '1') then
+
+			current_fase := next_fase;
+	 
+			CURRENT_FASE_OUT <= CURRENT_FASE;
+			
+		
+		CASE CURRENT_FASE IS
+		
+			WHEN F_RESET =>
+				
 				 
 				 
 			
 			WHEN F_1 =>
-			
 				CASE SC(3 DOWNTO 1) IS
 					
 					WHEN "001" =>
@@ -241,8 +245,6 @@ ARCHITECTURE BEHAVIOR OF CONTROLADOR_PRIN IS
 			
 			
 			WHEN F_2 =>
-			
-					
 				 if(SC(10)  = '1') then
 								  
 					  PC := BUS_EXT3 ;
@@ -281,8 +283,8 @@ ARCHITECTURE BEHAVIOR OF CONTROLADOR_PRIN IS
 				
 				 PC_OUT <= PC;
 			
-			WHEN F_3 =>
 			
+			WHEN F_3 =>
 				CASE (SC(17 DOWNTO 16)) IS
 				
 				WHEN "01" =>
@@ -308,8 +310,9 @@ ARCHITECTURE BEHAVIOR OF CONTROLADOR_PRIN IS
 				end if;
 			
 
-			WHEN F_4 =>
 			
+			
+			WHEN F_4 =>
 				CASE SC(22 DOWNTO 19) IS
 					
 					WHEN "0001" => --19
@@ -372,8 +375,8 @@ ARCHITECTURE BEHAVIOR OF CONTROLADOR_PRIN IS
 				END CASE;
 				
 	
-			WHEN F_5 =>
 			
+			WHEN F_5 =>
 				BUS_INT3 := std_logic_vector(unsigned(BUS_INT1) + unsigned(BUS_INT2));
 			
 				MPC := BUS_INT3;
@@ -387,7 +390,8 @@ ARCHITECTURE BEHAVIOR OF CONTROLADOR_PRIN IS
 		SC_OUT <= SC;
 		
 		MPC_OUT <= MPC;
-		
+		end if;
+			
 		
 							
 

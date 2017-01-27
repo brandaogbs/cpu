@@ -53,7 +53,7 @@ BEGIN
  
  		
 -- controlador principal
-		CONTROLADOR_PRIN_1	: CONTROLADOR_PRIN PORT MAP(NEXT_FASE,RST, SLOW_CLOCK,
+		CONTROLADOR_PRIN_1	: CONTROLADOR_PRIN PORT MAP(clk, NEXT_FASE,RST, SLOW_CLOCK,
 									  CURRENT_FASE,PC,BUS_ULA1,BUS_ULA2,BUS_EXT3,MPC,SC);
 	
 
@@ -93,8 +93,5 @@ fase_change:
 		end process;
 
 
-		
-
- 
 ----------------------------------  						
 END BEHAVIOR;   
