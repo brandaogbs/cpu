@@ -1,0 +1,199 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+-------------------------------
+
+entity microprocessador is
+	
+  port(	clk, rst, pc_botao, mux_botao 	: in std_logic;
+			pc_led 						  			: out std_logic;
+			mux_led									: out std_logic_vector(0 to 3);
+			display_segs							: out std_logic_vector(7 downto 0));
+
+end microprocessador;
+ 
+-------------------------------
+ 
+architecture behavior of microprocessador is	 
+
+	-- definicao de tipos da memoria
+	type MEM_ROM is array (0 to 255) of std_logic_vector(15 downto 0 );
+	type MEM_FILE is array (0 to 15) of std_logic_vector(15 downto 0 );
+
+	-- ROM: armazena as instrucoes (op|ra|rb|rd)
+	signal ROM: MEM_ROM;
+
+	-- registrador de arquivo : env
+	signal RF : MEM_FILE;
+	
+	-- contador de programa
+	signal PC			: integer range 0 to 255 := 0;
+	signal PC_temp		: integer range 0 to 255;
+	signal PC_return	: std_logic;
+	
+	-- registrador de instrucao: armazena instrucao que vem do PC
+	signal IR: std_logic_vector(15 downto 0);
+	
+	-- sinais decodificacao
+	signal opcode	: std_logic_vector (3 downto 0);
+	signal RA		: std_logic_vector(3 downto 0);
+	signal RB		: std_logic_vector(3 downto 0);
+	signal RD		: std_logic_vector(3 downto 0);
+	
+	-- registrador temporario: envia 8bits para a memoria de saida
+	signal TMP		: std_logic_vector(7 downto 0);
+	
+	-- sinal auxiliar para imediatos
+	signal imediato: std_logic_vector(7 downto 0);
+	
+	-- sinal de controle para desligar micro
+	signal halted	: std_logic;
+
+	-- signal auxilar para clock
+	signal slow_clock: std_logic;
+
+	-- maquina de moore (FSM)
+	type type_state is (s_fetch, s_decode, s_execute, s_store); --Quantidade de estados
+	signal current_state, next_state: type_state;
+
+
+begin
+		
+		-- maquina de moore de quatro estados (busca|decodificacao|execucao|armazenaento)
+		-- primeiro ciclo (fetch)	: BUSCA dados na memoria (ROM), coloca no (PC) em seguida passa para (IR)
+		-- segundo  ciclo	(decode)	: DECODIFICA o (IR) para 16-bits (opcode|RA|RB|RD)
+		-- terceiro ciclo	(execute): EXECUTA na ULA o opcode e guarda no (TMP)
+		-- quarto	ciclo	(store)	: ARMAZENA o resultado do (TMP) no (RF)
+		
+		
+		
+		
+		
+state_update:
+			process(slow_clock, rst)
+			begin
+				if (rst = '1') then
+					current_state <= s_fetch;
+				elsif (clk'event and clk = '1') then
+					 current_state <= next_state;
+				 end if;
+			end process;
+
+			
+			
+			
+state_change:
+			process (current_state)
+			begin
+				case current_state is
+					
+					when s_fetch =>
+						next_state <= s_decode;
+					
+					when s_decode =>
+						next_state <= s_execute;
+					
+					when s_execute =>
+						next_state <= s_store;
+					
+					when s_store =>
+						next_state <= s_fetch;
+						
+				end case;
+			end process;
+
+			
+			
+			
+			
+			
+			
+output_process:
+			process (current_state, slow_clock)
+			begin
+				case current_state is
+					when s_fetch 	=>	
+						if (rst = '1') then
+							ROM(0) 	<= "0000000000000000";
+							ROM(1) 	<= "0000000000000000";
+							ROM(2) 	<= "0000000000000000";
+							ROM(3) 	<= "0000000000000000";
+							ROM(4) 	<= "0000000000000000";
+							ROM(5) 	<= "0000000000000000";
+							ROM(6) 	<= "0000000000000000";
+							ROM(7) 	<= "0000000000000000";
+							ROM(8) 	<= "0000000000000000";
+							ROM(9) 	<= "0000000000000000";
+							ROM(10) 	<= "0000000000000000";
+							ROM(11) 	<= "0000000000000000";
+							ROM(12) 	<= "0000000000000000";
+							ROM(13) 	<= "0000000000000000";
+							ROM(14) 	<= "0000000000000000";
+							ROM(15) 	<= "0000000000000000";
+							ROM(16) 	<= "0000000000000000";
+							ROM(17) 	<= "0000000000000000";
+							ROM(18 to 255) <= (others => x"0000");
+						elsif rising_edge(slow_clock) then							
+							IR <= ROM(PC);
+						end if;
+			
+						
+					when s_decode	=>
+					
+							if (rst = '1') 	then
+								opcode 	<= 	"1111";
+								RA 		<= 	"0000";
+								RB 		<= 	"0000";
+								RD 		<= 	"0000";
+								imediato <= 	"00000000";
+									
+							elsif rising_edge(slow_clock) then
+								-- 0000_0000_0000_0000
+								opcode 	<= IR(15 downto 12);
+								RA 		<= IR(11 downto 8	);
+								RB 		<= IR(7 	downto 4	);
+								RD 		<= IR(3 	downto 0	);
+								imediato <= IR(11 downto 4	);
+							end if;							
+					
+					
+					when s_execute =>
+					
+							if (rst = '1') then
+								TMP 		<= "00000000";
+								halted 	<= '0';
+								
+							elsif rising_edge(slow_clock) then
+								case(opcode) is
+
+									when "0000" => -- HALT
+										halted <= '1';
+										TMP <= "00000000";
+									when "0001" => -- LDR
+										TMP <= imediato;
+									when "0010" => -- ADD
+										TMP <= RF(to_integer(unsigned(RA))) + RF(to_integer(unsigned(RB)));
+									when "0011" => -- SUB
+										TMP <= RF(to_integer(unsigned(RA))) - RF(to_integer(unsigned(RB)));
+									when "0100" => -- OR
+										TMP <= RF(to_integer(unsigned(RA))) OR RF(to_integer(unsigned(RB)));
+									when "1000" => -- XOR
+										TMP <= RF(to_integer(unsigned(RA))) XOR RF(to_integer(unsigned(RB)));
+									when "1001" => -- JMP
+										TMP <= imediato;
+									when others =>
+										TMP <= "00000000";
+								end case;
+							end if;
+					
+					when s_store	=>
+						if (rst = '1') then
+							RF(0 to 15) <= (others => x"0000");
+						elsif rising_edge(slow_clock) then
+							RF(conv_integer(RD)) <= TMP;
+						end if;
+						
+				end case;
+			end process;
+end behavior;   
